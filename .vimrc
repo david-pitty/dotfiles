@@ -1,4 +1,5 @@
-m-Plug - Plugin Manager
+"=========================
+"Vim-Plug - Plugin Manager
 "=========================
 call plug#begin('~/.vim/plugins')
 Plug 'klen/python-mode'
