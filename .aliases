@@ -8,6 +8,7 @@ alias df="df -h"
 alias diff="diff -y"
 alias aa="sudo service apache2 restart"
 alias ss="screen"
+alias tt="tmux"
 alias v="vim"
 alias vi="vim"
 
