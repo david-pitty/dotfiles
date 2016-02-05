@@ -12,6 +12,7 @@ alias ss="screen"
 alias tt="tmux"
 alias v="vim"
 alias vi="vim"
+alias pydev="sudo python setup.py develop"
 
 #Git
 alias gs="git status"
