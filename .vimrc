@@ -13,6 +13,7 @@ Plug 'bling/vim-airline'
 Plug 'ervandew/supertab'
 Plug 'ZoomWin'
 Plug 'fholgado/minibufexpl.vim'
+Plug 'ervandew/ag'
 "Plug 'scrooloose/syntastic' "add linters for python, js, angular, html
 "Plug 'junegunn/vim-journal'
 call plug#end()
