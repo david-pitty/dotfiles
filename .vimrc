@@ -9,11 +9,12 @@ Plug 'ctrlpvim/ctrlp.vim' "file fuzzy searcher
 Plug 'scrooloose/nerdtree' "file tree
 Plug 'scrooloose/nerdcommenter' "commenter plugin
 Plug 'tpope/vim-surround' "surround test with quotes, paren, etc
-Plug 'bling/vim-airline' "vim status bar
+Plug 'vim-airline/vim-airline' "vim status bar
+Plug 'vim-airline/vim-airline-themes'
 Plug 'ervandew/supertab' "auto compleations with tab
 Plug 'ZoomWin' "on vim buffer splits zoom into one and return to the splits
 "Plug 'fholgado/minibufexpl.vim' "list buffers
-"Plug 'ervandew/ag' "silver searcher (like vim grep) 
+"Plug 'ervandew/ag' "silver searcher (like vim grep)
 Plug 'flazz/vim-colorschemes' "color scheme compilation
 Plug 'ScrollColors'
 "Plug 'scrooloose/syntastic' "syntax highlighting for different languages
@@ -25,7 +26,7 @@ call plug#end()
 "=========================
 syntax enable
 set number
-set cursorline 
+set cursorline
 set ignorecase
 set hlsearch
 nnoremap <silent> <Esc><Esc> :nohlsearch<Bar>:echo<CR>
@@ -49,15 +50,21 @@ set clipboard=unnamed
 "highligth text after 120 characters
 match ErrorMsg '\%>120v.\+'
 
+"avoid auto colapse of functions
 set foldlevel=99
+
+"force vim-airline to show on single file
+set laststatus=2
 
 "=========================
 "Color Scheme
 "=========================
 set t_Co=256
 set background=dark
-colorscheme zenburn
-"colorscheme Tomorrow-Night
+"colorscheme zenburn
+colorscheme Tomorrow-Night
+let g:airline_theme='tomorrow'
+"let g:airline_theme='zenburn'
 
 "==================
 "PyMode Configurations
