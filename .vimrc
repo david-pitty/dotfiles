@@ -15,6 +15,7 @@ Plug 'ZoomWin' "on vim buffer splits zoom into one and return to the splits
 "Plug 'fholgado/minibufexpl.vim' "list buffers
 "Plug 'ervandew/ag' "silver searcher (like vim grep) 
 Plug 'flazz/vim-colorschemes' "color scheme compilation
+Plug 'ScrollColors'
 "Plug 'scrooloose/syntastic' "syntax highlighting for different languages
 "Plug 'junegunn/vim-journal' "for note taking
 call plug#end()
@@ -50,6 +51,14 @@ match ErrorMsg '\%>120v.\+'
 
 set foldlevel=99
 
+"=========================
+"Color Scheme
+"=========================
+set t_Co=256
+set background=dark
+colorscheme zenburn
+"colorscheme Tomorrow-Night
+
 "==================
 "PyMode Configurations
 "==================
@@ -64,18 +73,24 @@ let g:pymode_rope_goto_definition_bind = "<F12>"
 "Keyboard shortcuts
 "==================
 let mapleader = ","
+
 "Prevent escape from moving the cursor one character to the left
 inoremap <silent> <Esc> <Esc>`^
+
 "open and close nerd tree
 nnoremap <C-k><C-b> :NERDTreeToggle<CR>
+
 "open and close minibufexplorer
-nnoremap <C-k><C-i> :MBEToggle<CR>
+"nnoremap <C-k><C-i> :MBEToggle<CR>
+
 "o without INSERT mode
 nnoremap <Leader>O O<Esc>j
 nnoremap <Leader>o o<Esc>k
+
 "move across buffers
 nnoremap <Leader>m :bn<CR>
 nnoremap <Leader>n :bp<CR>
+
 "yank commands
 nnoremap yw yiw
 nnoremap <S-y> y$
