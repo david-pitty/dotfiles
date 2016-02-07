@@ -1,4 +1,3 @@
-alias cal="cal -w"
 alias rm="rm -rf"
 alias grep="grep  -i --color=auto"
 alias mkdir="mkdir -p"
@@ -9,7 +8,6 @@ alias st="sudo tail -fn 0 /var/log/apache2/error.log"
 alias tt="tmux -2"
 alias tta="tmux -2 attach"
 alias ttl="tmux ls"
-alias v="vim"
 alias vi="vim"
 alias pydev="sudo python setup.py develop"
 
