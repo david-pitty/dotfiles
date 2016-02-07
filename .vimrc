@@ -121,3 +121,6 @@ nnoremap <Leader>n :bp<CR>
 "yank commands
 nnoremap yw yiw
 nnoremap <S-y> y$
+
+"remap word under cursor search
+nnoremap <Leader>/ *
