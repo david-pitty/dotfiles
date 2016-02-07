@@ -30,6 +30,7 @@ set copyindent
 set shiftwidth=4
 set shiftround
 set number
+set relativenumber
 set cursorline
 "set cursorcolumn
 
