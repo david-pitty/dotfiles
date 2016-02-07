@@ -25,9 +25,28 @@ call plug#end()
 "Configurations
 "=========================
 syntax enable
+set autoindent
+set copyindent
+set shiftwidth=4
+set shiftround
 set number
 set cursorline
+"set cursorcolumn
+
+"ignore case only if search is in lowercase
 set ignorecase
+set smartcase
+
+"use plugins and key mappings depending on file type
+filetype plugin indent on
+
+"insert tabs on the start of a line according to shiftwidth, not tabstop
+set smarttab
+
+"allow for :e to open new buffer without saving the previous one
+set hidden
+
+"highlight searches and double Esc to deselect
 set hlsearch
 nnoremap <silent> <Esc><Esc> :nohlsearch<Bar>:echo<CR>
 
