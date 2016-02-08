@@ -3,8 +3,8 @@
 "=========================
 call plug#begin('~/.vim/plugins')
 "Plug 'klen/python-mode'
-Plug 'scrooloose/syntastic'
-Plug 'davidhalter/jedi-vim'
+Plug 'scrooloose/syntastic' "syntax highlighting for different languages
+Plug 'davidhalter/jedi-vim' "python autocompletion
 Plug 'terryma/vim-multiple-cursors' "Ctrl-d in sublime text
 Plug 'Raimondi/delimitMate' "addes closing quotes, paren, etc
 Plug 'ctrlpvim/ctrlp.vim' "file fuzzy searcher
@@ -12,16 +12,15 @@ Plug 'scrooloose/nerdtree' "file tree
 Plug 'scrooloose/nerdcommenter' "commenter plugin
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-surround' "surround test with quotes, paren, etc
+Plug 'bling/vim-bufferline' "list buffers on status bar
 Plug 'vim-airline/vim-airline' "vim status bar
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ervandew/supertab' "auto compleations with tab
 Plug 'SearchComplete' "tab completion on search
 Plug 'ZoomWin' "on vim buffer splits zoom into one and return to the splits
-"Plug 'fholgado/minibufexpl.vim' "list buffers
 "Plug 'ervandew/ag' "silver searcher (like vim grep)
 Plug 'flazz/vim-colorschemes' "color scheme compilation
 Plug 'ScrollColors'
-"Plug 'scrooloose/syntastic' "syntax highlighting for different languages
 "Plug 'junegunn/vim-journal' "for note taking
 call plug#end()
 
