@@ -15,6 +15,7 @@ Plug 'tpope/vim-surround' "surround test with quotes, paren, etc
 Plug 'vim-airline/vim-airline' "vim status bar
 Plug 'vim-airline/vim-airline-themes'
 Plug 'ervandew/supertab' "auto compleations with tab
+Plug 'SearchComplete' "tab completion on search
 Plug 'ZoomWin' "on vim buffer splits zoom into one and return to the splits
 "Plug 'fholgado/minibufexpl.vim' "list buffers
 "Plug 'ervandew/ag' "silver searcher (like vim grep)
