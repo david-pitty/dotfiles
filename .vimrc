@@ -2,7 +2,9 @@
 "Vim-Plug - Plugin Manager
 "=========================
 call plug#begin('~/.vim/plugins')
-Plug 'klen/python-mode'
+"Plug 'klen/python-mode'
+Plug 'scrooloose/syntastic'
+Plug 'davidhalter/jedi-vim'
 Plug 'terryma/vim-multiple-cursors' "Ctrl-d in sublime text
 Plug 'Raimondi/delimitMate' "addes closing quotes, paren, etc
 Plug 'ctrlpvim/ctrlp.vim' "file fuzzy searcher
@@ -76,9 +78,9 @@ set foldlevel=99
 "force vim-airline to show on single file
 set laststatus=2
 
-"=========================
+"============
 "Color Scheme
-"=========================
+"============
 set t_Co=256
 set background=dark
 "colorscheme zenburn
@@ -86,15 +88,14 @@ colorscheme Tomorrow-Night
 let g:airline_theme='tomorrow'
 "let g:airline_theme='zenburn'
 
-"==================
-"PyMode Configurations
-"==================
-let g:pymode_lint_options_pep8 = {'max_line_length': 120}
+"=====================
+"Python Configurations
+"=====================
+"let g:pymode_lint_options_pep8 = {'max_line_length': 120}
+"let g:pymode_rope_goto_definition_bind = '<F12>'
 
-"turn off rope plugin
-"let g:pymode_rope = 0
-
-let g:pymode_rope_goto_definition_bind = "<F12>"
+let g:syntastic_python_checkers = ['flake8']
+let g:syntastic_python_flake8_args='--max-line-length=120'
 
 "==================
 "Keyboard shortcuts
