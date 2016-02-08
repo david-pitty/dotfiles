@@ -10,6 +10,7 @@ Plug 'Raimondi/delimitMate' "addes closing quotes, paren, etc
 Plug 'ctrlpvim/ctrlp.vim' "file fuzzy searcher
 Plug 'scrooloose/nerdtree' "file tree
 Plug 'scrooloose/nerdcommenter' "commenter plugin
+Plug 'bronson/vim-trailing-whitespace'
 Plug 'tpope/vim-surround' "surround test with quotes, paren, etc
 Plug 'vim-airline/vim-airline' "vim status bar
 Plug 'vim-airline/vim-airline-themes'
@@ -59,6 +60,8 @@ autocmd FileType python set colorcolumn=120
 "highlight non-ascii character
 syntax match nonascii "[^\x00-\x7F]"
 highlight nonascii guibg=Red ctermbg=6*
+
+autocmd bufwritepre * :FixWhitespace
 
 "tab space size
 set ts=4
