@@ -3,7 +3,7 @@
 "=========================
 call plug#begin('~/.vim/plugins')
 "Plug 'klen/python-mode'
-Plug 'scrooloose/syntastic' "syntax highlighting for different languages
+Plug 'scrooloose/syntastic' "syntax highlighting for different languages. Requires: pip install flakes8
 Plug 'davidhalter/jedi-vim' "python autocompletion
 Plug 'terryma/vim-multiple-cursors' "Ctrl-d in sublime text
 Plug 'Raimondi/delimitMate' "addes closing quotes, paren, etc
@@ -18,10 +18,9 @@ Plug 'vim-airline/vim-airline-themes'
 Plug 'ervandew/supertab' "auto compleations with tab
 Plug 'SearchComplete' "tab completion on search
 Plug 'ZoomWin' "on vim buffer splits zoom into one and return to the splits
-"Plug 'ervandew/ag' "silver searcher (like vim grep)
+"Plug 'rking/ag.vim' "silver searcher (like vim grep) Requires: apt-get install silversearcher-ag
 Plug 'flazz/vim-colorschemes' "color scheme compilation
 Plug 'ScrollColors'
-"Plug 'junegunn/vim-journal' "for note taking
 call plug#end()
 
 "=========================
@@ -103,7 +102,7 @@ let g:syntastic_python_flake8_args='--max-line-length=120'
 "==================
 "Keyboard shortcuts
 "==================
-let mapleader = ","
+let mapleader = " "
 
 "Prevent escape from moving the cursor one character to the left
 inoremap <silent> <Esc> <Esc>`^
