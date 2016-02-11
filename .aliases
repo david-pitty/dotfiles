@@ -10,6 +10,7 @@ alias tta="tmux -2 attach"
 alias ttl="tmux ls"
 alias vi="vim"
 alias pydev="sudo python setup.py develop"
+alias pp="pecan serve config.py"
 
 #Git
 alias gs="git status"

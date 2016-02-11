@@ -29,6 +29,7 @@ call plug#end()
 syntax enable
 set autoindent
 set copyindent
+set expandtab
 set shiftwidth=4
 set shiftround
 set number
@@ -93,11 +94,11 @@ let g:airline_theme='tomorrow'
 "=====================
 "Python Configurations
 "=====================
-"let g:pymode_lint_options_pep8 = {'max_line_length': 120}
-"let g:pymode_rope_goto_definition_bind = '<F12>'
-
 let g:syntastic_python_checkers = ['flake8']
 let g:syntastic_python_flake8_args='--max-line-length=120'
+
+"find usage in project
+let g:jedi#usages_command = "<leader>f"
 
 "==================
 "Keyboard shortcuts
@@ -118,12 +119,11 @@ nnoremap <Leader>O O<Esc>j
 nnoremap <Leader>o o<Esc>k
 
 "move across buffers
-nnoremap <Leader>m :bn<CR>
-nnoremap <Leader>n :bp<CR>
+nnoremap <Leader>l :bn<CR>
+nnoremap <Leader>h :bp<CR>
 
 "yank commands
 nnoremap yw yiw
 nnoremap <S-y> y$
 
-"remap word under cursor search
-nnoremap <Leader>/ *
+map <C-S-c> <plug>NERDCommenterToggle
