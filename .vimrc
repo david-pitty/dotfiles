@@ -126,4 +126,8 @@ nnoremap <Leader>h :bp<CR>
 nnoremap yw yiw
 nnoremap <S-y> y$
 
+"toggle comment
 map <C-S-c> <plug>NERDCommenterToggle
+
+"vertical split
+nnoremap <Leader>\| :vert ba<cr>
