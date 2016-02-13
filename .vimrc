@@ -35,6 +35,8 @@ Plug 'rking/ag.vim'
 Plug 'flazz/vim-colorschemes'
 "colorschemes scroller
 Plug 'ScrollColors'
+"Plug 'xolox/vim-easytags'
+"Plug 'Shougo/unite.vim'
 call plug#end()
 
 "=========================
