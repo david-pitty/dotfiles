@@ -2,24 +2,38 @@
 "Vim-Plug - Plugin Manager
 "=========================
 call plug#begin('~/.vim/plugins')
-"Plug 'klen/python-mode'
-Plug 'scrooloose/syntastic' "syntax highlighting for different languages. Requires: pip install flakes8
-Plug 'davidhalter/jedi-vim' "python autocompletion
-Plug 'terryma/vim-multiple-cursors' "Ctrl-d in sublime text
-Plug 'Raimondi/delimitMate' "addes closing quotes, paren, etc
-Plug 'ctrlpvim/ctrlp.vim' "file fuzzy searcher
-Plug 'scrooloose/nerdtree' "file tree
-Plug 'scrooloose/nerdcommenter' "commenter plugin
+"syntax highlighting for different languages. Requires: pip install flakes8
+Plug 'scrooloose/syntastic'
+"python autocompletion
+Plug 'davidhalter/jedi-vim'
+"Ctrl-d in sublime text
+Plug 'terryma/vim-multiple-cursors'
+"adds closing quotes, parens, etc
+Plug 'Raimondi/delimitMate'
+"file fuzzy searcher
+Plug 'ctrlpvim/ctrlp.vim'
+"file tree
+Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
+"commenter plugin
+Plug 'scrooloose/nerdcommenter'
 Plug 'bronson/vim-trailing-whitespace'
-Plug 'tpope/vim-surround' "surround test with quotes, paren, etc
-Plug 'bling/vim-bufferline' "list buffers on status bar
-Plug 'vim-airline/vim-airline' "vim status bar
-Plug 'vim-airline/vim-airline-themes'
-Plug 'ervandew/supertab' "auto compleations with tab
-Plug 'SearchComplete' "tab completion on search
-Plug 'ZoomWin' "on vim buffer splits zoom into one and return to the splits
-"Plug 'rking/ag.vim' "silver searcher (like vim grep) Requires: apt-get install silversearcher-ag
-Plug 'flazz/vim-colorschemes' "color scheme compilation
+"surround test with quotes, paren, etc
+Plug 'tpope/vim-surround'
+"list buffers on status bar
+Plug 'bling/vim-bufferline'
+"vim status bar
+Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
+"auto compleations with tab
+Plug 'ervandew/supertab'
+"tab completion on search
+Plug 'SearchComplete'
+"on vim buffer splits zoom into one and return to the splits
+Plug 'ZoomWin'
+"silver searcher (like vim grep) Requires: apt-get install silversearcher-ag
+Plug 'rking/ag.vim'
+"color scheme compilation
+Plug 'flazz/vim-colorschemes'
+"colorschemes scroller
 Plug 'ScrollColors'
 call plug#end()
 
