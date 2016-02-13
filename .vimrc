@@ -17,7 +17,7 @@ Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 "commenter plugin
 Plug 'scrooloose/nerdcommenter'
 Plug 'bronson/vim-trailing-whitespace'
-"surround test with quotes, paren, etc
+"surround text with quotes, paren, etc
 Plug 'tpope/vim-surround'
 "list buffers on status bar
 Plug 'bling/vim-bufferline'
