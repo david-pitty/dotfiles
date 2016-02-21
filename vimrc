@@ -17,6 +17,7 @@ Plug 'scrooloose/nerdtree', {'on': 'NERDTreeToggle'}
 "commenter plugin
 Plug 'scrooloose/nerdcommenter'
 Plug 'bronson/vim-trailing-whitespace'
+Plug 'godlygeek/tabular'
 "surround text with quotes, paren, etc
 Plug 'tpope/vim-surround'
 "list buffers on status bar
@@ -48,8 +49,9 @@ set copyindent
 set expandtab
 set shiftwidth=4
 set shiftround
-set number
 set relativenumber
+set number
+set nowrap
 set cursorline
 "set cursorcolumn
 
