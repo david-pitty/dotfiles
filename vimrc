@@ -149,3 +149,6 @@ map <C-S-c> <plug>NERDCommenterToggle
 
 "vertical split
 nnoremap <Leader>\| :vert ba<cr>
+
+"add breakpoint for python
+nnoremap <C-S-b> Oimport pdb; pdb.set_trace()<Esc>j
