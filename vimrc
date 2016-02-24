@@ -38,6 +38,8 @@ Plug 'flazz/vim-colorschemes'
 Plug 'ScrollColors'
 "Plug 'xolox/vim-easytags'
 "Plug 'Shougo/unite.vim'
+"presentation plugin
+"Plug 'tybenz/vimdeck'
 call plug#end()
 
 "=========================
