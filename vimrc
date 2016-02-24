@@ -154,3 +154,6 @@ nnoremap <Leader>\| :vert ba<cr>
 
 "add breakpoint for python
 nnoremap <C-S-b> Oimport pdb; pdb.set_trace()<Esc>j
+
+"<work only> for easier commits
+nnoremap <C-k><C-e> /ECSS-<CR>y$ggpa<SPACE>
