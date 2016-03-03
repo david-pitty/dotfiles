@@ -21,3 +21,6 @@ alias ggs="git stash list"
 alias ggd="git stash show -p stash@{0}"
 alias gm="git merge --no-ff"
 alias gbd="git branch -D"
+
+#required for C-s save on vim
+stty -ixon

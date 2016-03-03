@@ -51,8 +51,8 @@ set copyindent
 set expandtab
 set shiftwidth=4
 set shiftround
-set relativenumber
 set number
+set relativenumber
 set nowrap
 set cursorline
 "set cursorcolumn
@@ -157,3 +157,6 @@ nnoremap <C-S-b> Oimport pdb; pdb.set_trace()<Esc>j
 
 "<work only> for easier commits
 nnoremap <C-k><C-e> /ECSS-<CR>y$ggpa<SPACE>
+
+"save a file
+nnoremap <C-S> :w<CR>
