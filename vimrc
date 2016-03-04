@@ -34,6 +34,7 @@ Plug 'ZoomWin'
 Plug 'rking/ag.vim'
 "color scheme compilation
 Plug 'flazz/vim-colorschemes'
+"Plug 'chriskempson/base16-vim'
 "colorschemes scroller
 Plug 'ScrollColors'
 "Plug 'xolox/vim-easytags'
@@ -104,11 +105,20 @@ set laststatus=2
 "============
 "Color Scheme
 "============
-set t_Co=256
 set background=dark
+
+set t_Co=256
 "colorscheme zenburn
 colorscheme Tomorrow-Night
-let g:airline_theme='tomorrow'
+"colorscheme bubblegum
+"colorscheme bvemu
+"colorscheme blueprint
+"colorscheme bensday
+
+"let base16colorspace=256  " Access colors present in 256 colorspace
+"colorscheme base16-tomorrow
+
+"let g:airline_theme='tomorrow'
 "let g:airline_theme='zenburn'
 
 "=====================
