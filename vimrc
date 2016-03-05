@@ -133,7 +133,7 @@ let g:jedi#usages_command = "<leader>f"
 "==================
 "Keyboard shortcuts
 "==================
-let mapleader = " "
+let mapleader = ","
 
 "Prevent escape from moving the cursor one character to the left
 inoremap <silent> <Esc> <Esc>`^
@@ -149,8 +149,8 @@ nnoremap <Leader>O O<Esc>j
 nnoremap <Leader>o o<Esc>k
 
 "move across buffers
-nnoremap <Leader>l :bn<CR>
-nnoremap <Leader>h :bp<CR>
+nnoremap <Leader>> :bn<CR>
+nnoremap <Leader>< :bp<CR>
 
 "yank commands
 nnoremap yw yiw
@@ -170,3 +170,6 @@ nnoremap <C-k><C-e> /ECSS-<CR>y$ggpa<SPACE>
 
 "save a file
 nnoremap <C-S> :w<CR>
+
+"suppress space to insert mode
+noremap <Space> <nop>
