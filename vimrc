@@ -110,6 +110,7 @@ set background=dark
 set t_Co=256
 "colorscheme zenburn
 colorscheme Tomorrow-Night
+"colorscheme apprentice
 "colorscheme bubblegum
 "colorscheme bvemu
 "colorscheme blueprint
