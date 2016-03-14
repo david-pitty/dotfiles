@@ -167,7 +167,7 @@ nnoremap <Leader>\| :vert ba<cr>
 nnoremap <C-S-b> Oimport pdb; pdb.set_trace()<Esc>j
 
 "<work only> for easier commits
-nnoremap <C-k><C-e> /ECSS-<CR>y$ggpa<SPACE>
+nnoremap <C-k><C-e> /ECSS-<CR>y$ggpa
 
 "save a file
 nnoremap <C-S> :w<CR>
