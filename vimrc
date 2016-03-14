@@ -172,5 +172,8 @@ nnoremap <C-k><C-e> /ECSS-<CR>y$ggpa<SPACE>
 "save a file
 nnoremap <C-S> :w<CR>
 
-"suppress space to insert mode
+"suppress space on normal mode
 noremap <Space> <nop>
+
+"CtrlP on buffers
+nnoremap <Leader>p :CtrlPBuffer<CR>
