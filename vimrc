@@ -137,13 +137,10 @@ let g:jedi#usages_command = "<leader>f"
 let mapleader = ","
 
 "Prevent escape from moving the cursor one character to the left
-inoremap <silent> <Esc> <Esc>`^
+"inoremap <silent> <Esc> <Esc>`^
 
 "open and close nerd tree
 nnoremap <C-k><C-b> :NERDTreeToggle<CR>
-
-"open and close minibufexplorer
-"nnoremap <C-k><C-i> :MBEToggle<CR>
 
 "o without INSERT mode
 nnoremap <Leader>O O<Esc>j
