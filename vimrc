@@ -130,6 +130,11 @@ let g:syntastic_python_flake8_args='--max-line-length=120'
 "find usage in project
 let g:jedi#usages_command = "<leader>f"
 
+"=========================
+"JavaScript Configurations
+"=========================
+let g:syntastic_javascript_checkers = ['jshint']
+
 "==================
 "Keyboard shortcuts
 "==================
