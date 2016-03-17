@@ -49,7 +49,6 @@ call plug#end()
 syntax enable
 set autoindent
 set copyindent
-set expandtab
 set shiftwidth=4
 set shiftround
 set number
