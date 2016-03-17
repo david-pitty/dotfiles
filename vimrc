@@ -33,10 +33,13 @@ Plug 'ZoomWin'
 "silver searcher (like vim grep) Requires: apt-get install silversearcher-ag
 Plug 'rking/ag.vim'
 "color scheme compilation
-Plug 'flazz/vim-colorschemes'
+"Plug 'flazz/vim-colorschemes'
+Plug 'morhetz/gruvbox'
 "Plug 'chriskempson/base16-vim'
 "colorschemes scroller
 Plug 'ScrollColors'
+"should replace the above
+"Plugin 'ujihisa/unite-colorscheme'
 "Plug 'xolox/vim-easytags'
 "Plug 'Shougo/unite.vim'
 "presentation plugin
@@ -105,10 +108,11 @@ set laststatus=2
 "Color Scheme
 "============
 set background=dark
+colorscheme gruvbox
 
-set t_Co=256
+"set t_Co=256
 "colorscheme zenburn
-colorscheme Tomorrow-Night
+"colorscheme Tomorrow-Night
 "colorscheme apprentice
 "colorscheme bubblegum
 "colorscheme bvemu
