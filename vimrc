@@ -108,9 +108,9 @@ set laststatus=2
 "Color Scheme
 "============
 set background=dark
+set t_Co=256
 colorscheme gruvbox
 
-"set t_Co=256
 "colorscheme zenburn
 "colorscheme Tomorrow-Night
 "colorscheme apprentice
