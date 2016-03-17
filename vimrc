@@ -35,7 +35,8 @@ Plug 'rking/ag.vim'
 "color scheme compilation
 "Plug 'flazz/vim-colorschemes'
 Plug 'morhetz/gruvbox'
-"Plug 'chriskempson/base16-vim'
+Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'noahfrederick/vim-noctu'
 "colorschemes scroller
 Plug 'ScrollColors'
 "should replace the above
@@ -118,9 +119,6 @@ colorscheme gruvbox
 "colorscheme bvemu
 "colorscheme blueprint
 "colorscheme bensday
-
-"let base16colorspace=256  " Access colors present in 256 colorspace
-"colorscheme base16-tomorrow
 
 "let g:airline_theme='tomorrow'
 "let g:airline_theme='zenburn'
