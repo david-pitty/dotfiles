@@ -133,6 +133,7 @@ let g:jedi#usages_command = "<leader>f"
 "=========================
 "JavaScript Configurations
 "=========================
+"global installation of jshint required
 let g:syntastic_javascript_checkers = ['jshint']
 
 "==================
