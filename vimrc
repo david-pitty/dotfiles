@@ -139,6 +139,11 @@ let g:jedi#usages_command = "<leader>f"
 "global installation of jshint required
 let g:syntastic_javascript_checkers = ['jshint']
 
+"====================
+"CtrlP Configurations
+"====================
+set wildignore+=*/target/*,*/node_modules/*
+
 "==================
 "Keyboard shortcuts
 "==================
