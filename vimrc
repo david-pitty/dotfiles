@@ -120,6 +120,7 @@ colorscheme gruvbox
 "colorscheme blueprint
 "colorscheme bensday
 
+"let g:airline_theme='base16'
 "let g:airline_theme='tomorrow'
 "let g:airline_theme='zenburn'
 
@@ -162,13 +163,13 @@ nnoremap yw yiw
 nnoremap <S-y> y$
 
 "toggle comment
-map <C-S-c> <plug>NERDCommenterToggle
+map <Leader>c <plug>NERDCommenterToggle
 
 "vertical split
 nnoremap <Leader>\| :vert ba<cr>
 
 "add breakpoint for python
-nnoremap <C-S-b> Oimport pdb; pdb.set_trace()<Esc>j
+nnoremap <Leader>b Oimport pdb; pdb.set_trace()<Esc>j
 
 "<work only> for easier commits
 nnoremap <C-k><C-e> /ECSS-<CR>y$ggpa
