@@ -61,6 +61,9 @@ set nowrap
 set cursorline
 "set cursorcolumn
 
+"show key strokes on status bar
+set showcmd
+
 "ignore case only if search is in lowercase
 set ignorecase
 set smartcase
