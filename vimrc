@@ -60,6 +60,7 @@ set relativenumber
 set nowrap
 set cursorline
 "set cursorcolumn
+set expandtab
 
 "show key strokes on status bar
 set showcmd
