@@ -1,0 +1,7 @@
+[include]
+	path = ~/projects/gists/git_user
+[push]
+	default = simple
+[alias]
+	commits = commit -v
+	logs = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
