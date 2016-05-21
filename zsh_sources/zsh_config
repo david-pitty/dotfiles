@@ -1,4 +1,5 @@
 ZSH_THEME="awesomepanda"
+EDITOR="vim"
 
 # Base16 Shell
 BASE16_SHELL="$HOME/projects/base16-shell/base16-chalk.dark.sh"
