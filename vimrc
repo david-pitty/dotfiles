@@ -180,10 +180,9 @@ nnoremap <Leader>\| :vert ba<cr>
 "add breakpoint for python
 nnoremap <Leader>b Oimport pdb; pdb.set_trace()<Esc>j
 
-"<work only> for easier commits
-nnoremap <C-k><C-e> /ECSS-<CR>y$ggpa
-
 "save a file
+"requires "stty -ixon" on shell profile
+"to avoid terminal freeze, C-q unfreezes the terminal
 nnoremap <C-S> :w<CR>
 
 "suppress space on normal mode
