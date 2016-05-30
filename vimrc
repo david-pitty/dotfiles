@@ -62,6 +62,9 @@ set cursorline
 "set cursorcolumn
 set expandtab
 
+"tab completion list on command mode
+set wildmenu
+
 "show key strokes on status bar
 set showcmd
 
