@@ -22,8 +22,11 @@ alias ggs="git stash list"
 alias ggd="git stash show -p stash@{0}"
 alias gm="git merge --no-ff"
 alias gbd="git branch -D"
+alias gga="git add ."
 alias ga="git commit -av"
 alias gc="git commit -v"
+alias gp="git push"
+alias gl="git pull"
 alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 
 #required for C-s save on vim
