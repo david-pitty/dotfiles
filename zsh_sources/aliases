@@ -15,6 +15,7 @@ alias l="ls -alh"
 
 #Git
 alias gs="git status"
+alias gd="git diff"
 alias gg="git stash"
 alias gg!="git stash pop"
 alias ggx="git stash drop"
@@ -30,6 +31,7 @@ alias gl="git pull"
 alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gco="git checkout"
 alias gcm="git checkout master"
+alias gcb="git checkout -b"
 
 #required for C-s save on vim
 stty -ixon
