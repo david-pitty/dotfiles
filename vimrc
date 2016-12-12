@@ -4,6 +4,8 @@
 call plug#begin('~/.vim/plugins')
 "syntax highlighting for different languages. Requires: pip install flakes8
 Plug 'scrooloose/syntastic'
+"puppet syntax highlighting
+Plug 'rodjek/vim-puppet'
 "python autocompletion
 Plug 'davidhalter/jedi-vim'
 "Ctrl-d in sublime text
