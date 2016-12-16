@@ -196,10 +196,13 @@ nnoremap <C-S> :w<CR>
 noremap <Space> <nop>
 
 "CtrlP on buffers
-nnoremap <Leader>p :CtrlPBuffer<CR>
+nnoremap <Leader>P :CtrlPBuffer<CR>
 
 "navigate through windows with Ctrl
 nnoremap <C-Up> :wincmd k<CR>
 nnoremap <C-Right> :wincmd l<CR>
 nnoremap <C-Down> :wincmd j<CR>
 nnoremap <C-Left> :wincmd h<CR>
+
+"toggle paste mode
+nnoremap <Leader>p :set paste!<CR>
