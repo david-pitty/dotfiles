@@ -171,6 +171,8 @@ nnoremap <Leader>o o<Esc>k
 "move across buffers
 nnoremap <Leader>> :bn<CR>
 nnoremap <Leader>< :bp<CR>
+nnoremap <S-Right> :bn<CR>
+nnoremap <S-Left> :bp<CR>
 
 "yank commands
 nnoremap yw yiw
@@ -195,3 +197,9 @@ noremap <Space> <nop>
 
 "CtrlP on buffers
 nnoremap <Leader>p :CtrlPBuffer<CR>
+
+"navigate through windows with Ctrl
+nnoremap <C-Up> :wincmd k<CR>
+nnoremap <C-Right> :wincmd l<CR>
+nnoremap <C-Down> :wincmd j<CR>
+nnoremap <C-Left> :wincmd h<CR>
