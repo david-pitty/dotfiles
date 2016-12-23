@@ -206,3 +206,11 @@ nnoremap <C-Left> :wincmd h<CR>
 
 "toggle paste mode
 nnoremap <Leader>p :set paste!<CR>
+
+"tmux will send xterm-style keys when its xterm-keys option is on
+if &term =~ '^screen'
+    execute "set <xUp>=\e[1;*A"
+    execute "set <xDown>=\e[1;*B"
+    execute "set <xRight>=\e[1;*C"
+    execute "set <xLeft>=\e[1;*D"
+endif
