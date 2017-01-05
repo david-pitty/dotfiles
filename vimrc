@@ -6,6 +6,8 @@ call plug#begin('~/.vim/plugins')
 Plug 'scrooloose/syntastic'
 "puppet syntax highlighting
 Plug 'rodjek/vim-puppet'
+"powershell syntax highlighting
+Plug 'pprovost/vim-ps1'
 "python autocompletion
 Plug 'davidhalter/jedi-vim'
 "Ctrl-d in sublime text
