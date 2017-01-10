@@ -9,4 +9,6 @@ echo "source $(pwd)/shell_sources/aliases" >> ~/.zshrc
 echo ":so $(pwd)/vimrc" >> ~/.vimrc
 echo "source-file $(pwd)/tmux.conf" >> ~/.tmux.conf
 
+cat ./minttyrc > ~/.minttyrc
+
 git config --global include.path "$(pwd)/gitcofig"
