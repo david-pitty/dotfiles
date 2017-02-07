@@ -13,7 +13,6 @@ alias ga="git add"
 alias gga="git commit -av"
 alias gc="git commit -v"
 alias gp="git push"
-alias ggp="git push origin $(git rev-parse --abbrev-ref HEAD)"
 alias gl="git pull"
 alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gco="git checkout"
@@ -23,3 +22,7 @@ alias grb="git rebase"
 alias grbm="git rebase master"
 alias grbc="git rebase --continue"
 alias grbs="git rebase --skip"
+
+function ggp {
+    git push origin $(git rev-parse --abbrev-ref HEAD)
+}
