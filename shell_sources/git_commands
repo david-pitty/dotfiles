@@ -1,3 +1,4 @@
+alias gcl="git clone"
 alias gf="git fetch"
 alias gs="git status"
 alias gd="git diff"
