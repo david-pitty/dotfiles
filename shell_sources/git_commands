@@ -36,3 +36,7 @@ function ggp {
 function ggp! {
     git push origin +$(git rev-parse --abbrev-ref HEAD)
 }
+
+function ggl {
+    git pull origin $(git rev-parse --abbrev-ref HEAD)
+}
