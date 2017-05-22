@@ -116,6 +116,10 @@ set foldlevel=99
 "force vim-airline to show on single file
 set laststatus=2
 
+"focus on new split window
+set splitbelow
+set splitright
+
 "============
 "Color Scheme
 "============
