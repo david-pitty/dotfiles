@@ -190,6 +190,9 @@ nnoremap <C-Left> :wincmd h<CR>
 nnoremap <Leader>p :set paste!<CR>
 nnoremap <Leader>P :set paste<CR>P:set nopaste<CR>
 
+"toggle wrap
+nnoremap <Leader>w :set wrap!<CR>
+
 "tmux will send xterm-style keys when its xterm-keys option is on
 if &term =~ '^screen'
     execute "set <xUp>=\e[1;*A"
