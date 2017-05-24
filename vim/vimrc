@@ -111,15 +111,18 @@ set laststatus=2
 set splitbelow
 set splitright
 
+"fix backspace on gvim
+set backspace=indent,eol,start
+
 "============
 "Color Scheme
 "============
 set background=dark
 set t_Co=256
-colorscheme gruvbox
+"colorscheme gruvbox
 
 "colorscheme zenburn
-"colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night
 "colorscheme apprentice
 "colorscheme bubblegum
 "colorscheme bvemu
@@ -163,6 +166,9 @@ nnoremap <S-y> y$
 "toggle comment
 map <Leader>c <plug>NERDCommenterToggle
 
+"CtrlP on buffers
+nnoremap <Leader>b :CtrlPBuffer<CR>
+
 "vertical split
 nnoremap <Leader>\| :vert ba<cr>
 
@@ -174,9 +180,6 @@ nnoremap <C-S> :w<CR>
 "suppress space on normal mode
 noremap <Space> <nop>
 
-"CtrlP on buffers
-nnoremap <Leader>P :CtrlPBuffer<CR>
-
 "navigate through windows with Ctrl
 nnoremap <C-Up> :wincmd k<CR>
 nnoremap <C-Right> :wincmd l<CR>
@@ -185,6 +188,7 @@ nnoremap <C-Left> :wincmd h<CR>
 
 "toggle paste mode
 nnoremap <Leader>p :set paste!<CR>
+nnoremap <Leader>P :set paste<CR>P:set nopaste<CR>
 
 "tmux will send xterm-style keys when its xterm-keys option is on
 if &term =~ '^screen'
