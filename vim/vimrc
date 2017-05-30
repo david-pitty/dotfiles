@@ -154,10 +154,11 @@ nnoremap <Leader>O O<Esc>j
 nnoremap <Leader>o o<Esc>k
 
 "move across buffers
-nnoremap <Leader>> :bn<CR>
-nnoremap <Leader>< :bp<CR>
 nnoremap <S-Right> :bn<CR>
 nnoremap <S-Left> :bp<CR>
+
+"close buffer
+nnoremap <Leader>d :bd!<CR>
 
 "yank commands
 nnoremap yw yiw
