@@ -158,7 +158,11 @@ nnoremap <S-Right> :bn<CR>
 nnoremap <S-Left> :bp<CR>
 
 "close buffer
-nnoremap <Leader>d :bd!<CR>
+nnoremap <Leader>d :bd<CR>
+nnoremap <Leader>D :bd!<CR>
+
+"close window/pane
+nnoremap <Leader>q :q<CR>
 
 "yank commands
 nnoremap yw yiw
@@ -180,6 +184,9 @@ nnoremap <C-S> :w<CR>
 
 "suppress space on normal mode
 noremap <Space> <nop>
+
+"suppress visual mode
+noremap Q <nop>
 
 "navigate through windows with Ctrl
 nnoremap <C-Up> :wincmd k<CR>
