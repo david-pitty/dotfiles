@@ -1,3 +1,5 @@
+echo "if [ -f ~/.bashrc ]; then . ~/.bashrc; fi" > ~/.bash_profile
+
 echo "source $(pwd)/shell_sources/bashrc" >> ~/.bashrc
 echo "source $(pwd)/shell_sources/aliases" >> ~/.bashrc
 echo "source $(pwd)/shell_sources/git_commands" >> ~/.bashrc
