@@ -1,4 +1,18 @@
-set completion-ignore-case On
+###########
+# Options #
+###########
+
+set completion-ignore-case on
+set show-all-if-ambiguous on
+#set expand-tilde on
+
+# ensure vim is default editor
+set -o vi
+
+
+################
+# Key Bindings #
+################
 
 # Ctrl left/right => move cursor 1 word
 "\e[1;5C": forward-word
