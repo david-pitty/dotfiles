@@ -2,3 +2,4 @@ take () {
   mkdir $@ && cd $_;
 }
 export EDITOR=vim
+stty -ixon
