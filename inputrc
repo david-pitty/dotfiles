@@ -1,0 +1,9 @@
+set completion-ignore-case On
+
+# Ctrl left/right => move cursor 1 word
+"\e[1;5C": forward-word
+"\e[1;5D": backward-word
+
+# Alt left/right => start/end of line
+"\e\e[D": beginning-of-line
+"\e\e[C": end-of-line
