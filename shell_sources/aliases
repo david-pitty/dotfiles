@@ -1,5 +1,5 @@
 alias rm="rm -rf"
-alias grep="grep  -i --color=auto"
+alias grep="grep  -in --color=auto"
 alias mkdir="mkdir -p"
 alias mkd="mkdir -p"
 alias df="df -h"
