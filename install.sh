@@ -20,3 +20,4 @@ echo "source-file $(pwd)/tmux.conf" >> ~/.tmux.conf
 cat ./minttyrc > ~/.minttyrc
 
 git config --global include.path "$(pwd)/gitcofig"
+git config --global core.excludesfile "$(pwd)/gitignore_global"
