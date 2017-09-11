@@ -60,3 +60,6 @@ nnoremap <Leader>P :set paste<CR>P:set nopaste<CR>
 
 "toggle wrap
 nnoremap <Leader>w :set wrap!<CR>
+
+"new buffer
+nnoremap <Leader>n :enew<CR>
