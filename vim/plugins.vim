@@ -4,6 +4,8 @@
 call plug#begin('~/.vim/plugins')
 "syntax highlighting for different languages. Requires: pip install flakes8
 Plug 'scrooloose/syntastic'
+"language pack colletion
+"Plug 'sheerun/vim-polyglot'
 "puppet syntax highlighting
 Plug 'rodjek/vim-puppet'
 "Ctrl-d in sublime text
@@ -35,6 +37,7 @@ Plug 'ervandew/supertab'
 Plug 'morhetz/gruvbox'
 Plug 'chriskempson/vim-tomorrow-theme'
 Plug 'noahfrederick/vim-noctu'
+Plug 'joshdick/onedark.vim'
 "colorschemes scroller
 Plug 'vim-scripts/ScrollColors'
 "should replace the above
