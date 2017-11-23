@@ -8,6 +8,8 @@ Plug 'scrooloose/syntastic'
 "Plug 'sheerun/vim-polyglot'
 "puppet syntax highlighting
 Plug 'rodjek/vim-puppet'
+"log syntax highlighting
+Plug 'dzeban/vim-log-syntax'
 "Ctrl-d in sublime text
 Plug 'terryma/vim-multiple-cursors'
 "adds closing quotes, parens, etc
