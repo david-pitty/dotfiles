@@ -63,3 +63,9 @@ nnoremap <Leader>w :set wrap!<CR>
 
 "new buffer
 nnoremap <Leader>n :enew<CR>
+
+"resize windows
+nnoremap <S-C-Up> :resize +5<CR>
+nnoremap <S-C-Down> :resize -5<CR>
+nnoremap <S-C-Right> :vert resize +5<CR>
+nnoremap <S-C-Left> :vert resize -5<CR>
