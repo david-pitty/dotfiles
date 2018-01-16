@@ -21,8 +21,10 @@ nnoremap <S-Left> :bp<CR>
 nnoremap <Leader>d :bd<CR>
 nnoremap <Leader>D :bd!<CR>
 
+"close pane
+nnoremap <Leader>q :q<CR>
 "close all windows
-nnoremap <Leader>q :qa<CR>
+nnoremap <Leader>Q :qa<CR>
 
 "yank commands
 nnoremap yw yiw
