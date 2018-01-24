@@ -33,6 +33,7 @@ set smarttab
 set hidden
 
 "highlight searches and double Esc to deselect
+set incsearch
 set hlsearch
 nnoremap <silent> <Esc><Esc> :nohlsearch<Bar>:echo<CR>
 
