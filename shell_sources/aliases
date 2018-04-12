@@ -16,3 +16,10 @@ alias l="ls -alh"
 alias h="head"
 alias c="cat -n"
 alias less="less -i"
+alias copy="pbcopy"
+
+if [[ `uname` == 'Darwin' ]]; then
+    alias ls='ls -G'
+else
+    alias ls='ls --color'
+fi
