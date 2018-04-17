@@ -46,6 +46,7 @@ nnoremap <C-S> :w<CR>
 
 "suppress space on normal mode
 noremap <Space> <nop>
+noremap <Leader><Space> <nop>
 
 "suppress visual mode
 noremap Q <nop>
