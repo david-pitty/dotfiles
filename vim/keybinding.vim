@@ -1,7 +1,7 @@
 "==================
 "Keyboard shortcuts
 "==================
-let mapleader = "`"
+"let mapleader = " "
 
 "Prevent escape from moving the cursor one character to the left
 "inoremap <silent> <Esc> <Esc>`^
