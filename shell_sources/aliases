@@ -17,6 +17,7 @@ alias h="head"
 alias c="cat -n"
 alias less="less -i"
 alias copy="pbcopy"
+alias pprint="python -m json.tool"
 
 if [[ `uname` == 'Darwin' ]]; then
     alias ls='ls -G'
