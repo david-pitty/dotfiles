@@ -46,3 +46,7 @@ function gtD {
     git tag -d $1
     git push origin :refs/tags/$1
 }
+
+function gd? {
+    git diff $1~ $1
+}
