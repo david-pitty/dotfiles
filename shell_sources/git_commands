@@ -24,8 +24,7 @@ alias grb="git rebase"
 alias grbm="git rebase master"
 alias grbc="git rebase --continue"
 alias grbs="git rebase --skip"
-alias grst="git reset"
-alias grt="git reset"
+alias gr="git reset"
 alias grh="git reset --hard"
 alias gt="git tag"
 alias gpt="git push --tags"
@@ -40,4 +39,10 @@ function ggp! {
 
 function ggl {
     git pull origin $(git rev-parse --abbrev-ref HEAD)
+}
+
+# delete a @ local + remote
+function gtD {
+    git tag -d $1
+    git push origin :refs/tags/$1
 }
