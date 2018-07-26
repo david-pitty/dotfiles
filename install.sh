@@ -4,7 +4,6 @@ echo "source $(pwd)/shell_sources/bashrc" >> ~/.bashrc
 echo "source $(pwd)/shell_sources/aliases" >> ~/.bashrc
 echo "source $(pwd)/shell_sources/git_commands" >> ~/.bashrc
 #echo "source $(pwd)/shell_sources/bash_prompt" >> ~/.bashrc
-#echo "source $(pwd)/shell_sources/mac_aliases" >> ~/.bashrc
 
 #echo "source $(pwd)/shell_sources/zshrc" >> ~/.zshrc
 #echo "source $(pwd)/shell_sources/git_commands" >> ~/.zshrc

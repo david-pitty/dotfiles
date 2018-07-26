@@ -74,8 +74,8 @@ set backspace=indent,eol,start
 set background=dark
 set t_Co=256
 
-colorscheme onedark
-"colorscheme gruvbox
+"colorscheme onedark
+colorscheme gruvbox
 "colorscheme zenburn
 "colorscheme Tomorrow-Night
 "colorscheme apprentice
