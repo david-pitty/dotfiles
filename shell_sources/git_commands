@@ -50,3 +50,7 @@ function gtD {
 function gd? {
     git diff $1~ $1
 }
+
+function gdd? {
+    git diff --name-only $1~ $1
+}
