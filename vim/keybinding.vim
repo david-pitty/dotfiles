@@ -75,3 +75,6 @@ nnoremap <S-C-Left> :vert resize -5<CR>
 
 "sync scrolling
 nnoremap <Leader>B :windo set scrollbind!<CR>
+
+"toggle show caret return
+nnoremap <Leader>s :set list!<CR>

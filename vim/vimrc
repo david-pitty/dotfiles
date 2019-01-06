@@ -68,6 +68,10 @@ set splitright
 "fix backspace on gvim
 set backspace=indent,eol,start
 
+"set hidden characters
+set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
+set showbreak=↪
+
 "============
 "Color Scheme
 "============
@@ -75,9 +79,10 @@ set background=dark
 set t_Co=256
 
 "colorscheme onedark
-colorscheme gruvbox
+"colorscheme gruvbox
 "colorscheme zenburn
 "colorscheme Tomorrow-Night
+colorscheme Tomorrow-Night-Eighties
 "colorscheme apprentice
 "colorscheme bubblegum
 "colorscheme bvemu
