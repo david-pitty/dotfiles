@@ -70,7 +70,7 @@ set backspace=indent,eol,start
 
 "set hidden characters
 set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
-set showbreak=↪
+"set showbreak=↪
 
 "============
 "Color Scheme
