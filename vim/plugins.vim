@@ -50,3 +50,9 @@ Plug 'vim-scripts/ScrollColors'
 "Plug 'tybenz/vimdeck'
 call plug#end()
 
+"====================
+"Plugin configuration
+"====================
+"relative line nums for NERDTree
+let NERDTreeShowLineNumbers=1
+autocmd FileType nerdtree setlocal relativenumber
