@@ -7,7 +7,7 @@ set show-all-if-ambiguous on
 #set expand-tilde on
 
 # ensure vim is default editor
-set -o vi
+# set -o vi
 
 
 ################
