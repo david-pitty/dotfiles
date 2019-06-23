@@ -1,5 +1,6 @@
 "TS syntax highlighting
-Plug 'leafgarland/typescript-vim'
+Plug 'herringtondarkholme/yats.vim'
+"Plug 'leafgarland/typescript-vim'
 "TS omni-completion + nav to symbol
 Plug 'quramy/tsuquyomi'
 "TS indentation

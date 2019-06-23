@@ -2,9 +2,9 @@ set t_Co=256
 set background=dark
 
 "colorscheme onedark
-"colorscheme gruvbox
+colorscheme gruvbox
 "colorscheme zenburn
-colorscheme Tomorrow-Night-Eighties
+"colorscheme Tomorrow-Night-Eighties
 "colorscheme Tomorrow-Night
 "colorscheme apprentice
 "colorscheme bubblegum
