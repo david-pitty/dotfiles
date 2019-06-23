@@ -1,4 +1,19 @@
 "=========================
+"Vim-Plug - Plugin Manager
+"=========================
+call plug#begin('~/.vim/plugins')
+source ~/projects/dotfiles/vim/plugins/main.vim
+source ~/projects/dotfiles/vim/plugins/javascript.vim
+source ~/projects/dotfiles/vim/plugins/powershell.vim
+"source ~/projects/dotfiles/vim/plugins/python.vim
+"source ~/projects/dotfiles/vim/plugins/puppet.vim
+call plug#end()
+
+source ~/projects/dotfiles/vim/keybinding.vim
+source ~/projects/dotfiles/vim/style.vim
+
+
+"=========================
 "Configurations
 "=========================
 syntax enable
@@ -46,9 +61,6 @@ autocmd bufwritepre * :FixWhitespace
 "tab space size
 set ts=4
 
-"auto source .vimrc after save
-autocmd! bufwritepost .vimrc source %
-
 "Save to clipboard
 set clipboard=unnamed
 
@@ -72,26 +84,6 @@ set backspace=indent,eol,start
 set listchars=tab:→\ ,eol:¬,trail:⋅,extends:❯,precedes:❮
 "set showbreak=↪
 
-"============
-"Color Scheme
-"============
-set background=dark
-set t_Co=256
-
-"colorscheme onedark
-"colorscheme gruvbox
-"colorscheme zenburn
-"colorscheme Tomorrow-Night
-colorscheme Tomorrow-Night-Eighties
-"colorscheme apprentice
-"colorscheme bubblegum
-"colorscheme bvemu
-"colorscheme blueprint
-"colorscheme bensday
-
-"let g:airline_theme='base16'
-"let g:airline_theme='tomorrow'
-"let g:airline_theme='zenburn'
 
 "====================
 "CtrlP Configurations

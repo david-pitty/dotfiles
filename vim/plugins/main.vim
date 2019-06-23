@@ -1,13 +1,19 @@
-"=========================
-"Vim-Plug - Plugin Manager
-"=========================
-call plug#begin('~/.vim/plugins')
+"vim status bar
+Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
+"color scheme compilation
+"Plug 'flazz/vim-colorschemes'
+Plug 'morhetz/gruvbox'
+Plug 'chriskempson/vim-tomorrow-theme'
+Plug 'noahfrederick/vim-noctu'
+Plug 'joshdick/onedark.vim'
+"colorschemes scroller
+Plug 'vim-scripts/ScrollColors'
+"should replace the above
+"Plugin 'ujihisa/unite-colorscheme'
 "syntax highlighting for different languages. Requires: pip install flakes8
 Plug 'scrooloose/syntastic'
 "language pack colletion
 "Plug 'sheerun/vim-polyglot'
-"puppet syntax highlighting
-Plug 'rodjek/vim-puppet'
 "log syntax highlighting
 Plug 'dzeban/vim-log-syntax'
 "Ctrl-d in sublime text
@@ -26,33 +32,19 @@ Plug 'godlygeek/tabular'
 Plug 'tpope/vim-surround'
 "list buffers on status bar
 Plug 'bling/vim-bufferline'
-"vim status bar
-Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 "auto compleations with tab
 Plug 'ervandew/supertab'
 "on vim buffer splits zoom into one and return to the splits
 "Plug 'vim-scripts/ZoomWin'
 "silver searcher (like vim grep) Requires: apt-get install silversearcher-ag
 "Plug 'rking/ag.vim'
-"color scheme compilation
-"Plug 'flazz/vim-colorschemes'
-Plug 'morhetz/gruvbox'
-Plug 'chriskempson/vim-tomorrow-theme'
-Plug 'noahfrederick/vim-noctu'
-Plug 'joshdick/onedark.vim'
-"colorschemes scroller
-Plug 'vim-scripts/ScrollColors'
-"should replace the above
-"Plugin 'ujihisa/unite-colorscheme'
 "Plug 'xolox/vim-easytags'
 "Plug 'Shougo/unite.vim'
 "presentation plugin
 "Plug 'tybenz/vimdeck'
-call plug#end()
 
-"====================
-"Plugin configuration
-"====================
-"relative line nums for NERDTree
-let NERDTreeShowLineNumbers=1
-autocmd FileType nerdtree setlocal relativenumber
+autocmd VimEnter * call SetupMain()
+function SetupMain()
+    "relative line nums for NERDTree
+    let g:NERDTreeShowLineNumbers=1
+endfunction
