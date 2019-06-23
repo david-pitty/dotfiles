@@ -1,3 +1,6 @@
+"syntax highlighting for different languages. Requires: pip install flakes8
+" ***TRY https://github.com/w0rp/ale
+Plug 'scrooloose/syntastic'
 "vim status bar
 Plug 'vim-airline/vim-airline' | Plug 'vim-airline/vim-airline-themes'
 "color scheme compilation
@@ -10,8 +13,6 @@ Plug 'joshdick/onedark.vim'
 Plug 'vim-scripts/ScrollColors'
 "should replace the above
 "Plugin 'ujihisa/unite-colorscheme'
-"syntax highlighting for different languages. Requires: pip install flakes8
-Plug 'scrooloose/syntastic'
 "language pack colletion
 "Plug 'sheerun/vim-polyglot'
 "log syntax highlighting
