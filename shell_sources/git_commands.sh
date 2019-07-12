@@ -29,6 +29,8 @@ alias gr="git reset"
 alias grh="git reset --hard"
 alias gt="git tag"
 alias gpt="git push --tags"
+alias gbl="git blame"
+alias gmv="git mv"
 
 function ggp {
     git push origin $(git rev-parse --abbrev-ref HEAD)
