@@ -20,6 +20,7 @@ alias less="less -i"
 alias copy="pbcopy"
 alias pprint="python -m json.tool"
 alias g="grep"
+alias gr="grep -r"
 alias cp="cp -a"
 
 if [[ `uname` == 'Darwin' ]]; then
