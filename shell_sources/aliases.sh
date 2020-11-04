@@ -22,6 +22,8 @@ alias pprint="python -m json.tool"
 alias g="grep"
 alias gr="grep -r"
 alias cp="cp -a"
+alias nr="npm run"
+alias ns="npm start"
 
 if [[ `uname` == 'Darwin' ]]; then
     alias ls='ls -G'
