@@ -24,6 +24,7 @@ alias gr="grep -r"
 alias cp="cp -a"
 alias nr="npm run"
 alias ns="npm start"
+alias nt="npm test"
 
 if [[ `uname` == 'Darwin' ]]; then
     alias ls='ls -G'
