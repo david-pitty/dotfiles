@@ -2,7 +2,7 @@ alias gcl="git clone"
 alias gf="git fetch"
 alias gs="git status"
 alias gd="git diff"
-alias gdd="git diff --name-only"
+alias gdd="git --no-pager diff --name-only"
 alias gg="git stash save"
 alias gg!="git stash pop"
 alias ggx="git stash drop"
@@ -58,5 +58,5 @@ function gd? {
 }
 
 function gdd? {
-    git diff --name-only $1~ $1
+    git --no-pager diff --name-only $1~ $1
 }
