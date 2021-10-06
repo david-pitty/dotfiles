@@ -22,3 +22,7 @@ echo "source-file $(pwd)/tmux.conf" >> ~/.tmux.conf
 
 git config --global include.path "$(pwd)/gitcofig"
 git config --global core.excludesfile "$(pwd)/gitignore_global"
+
+# Visual Studio Code
+# ln -s vscode/keybindings.json ~/AppData/Roaming/Code/User/keybindings.json
+# ln -s vscode/settings.json ~/AppData/Roaming/Code/User/settings.json
