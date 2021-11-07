@@ -1,5 +1,5 @@
 take () {
-  mkdir $@ && cd $_;
+  mkdir -p $@ && cd $_;
 }
 export EDITOR=vim
 stty -ixon
