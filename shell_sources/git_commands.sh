@@ -44,6 +44,14 @@ function ggp! {
     git push origin +$(git rev-parse --abbrev-ref HEAD)
 }
 
+function ggpx {
+    git push --no-verify origin $(git rev-parse --abbrev-ref HEAD)
+}
+
+function ggpx! {
+    git push --no-verify origin +$(git rev-parse --abbrev-ref HEAD)
+}
+
 function ggl {
     git pull origin $(git rev-parse --abbrev-ref HEAD)
 }
