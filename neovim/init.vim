@@ -1,4 +1,5 @@
 syntax enable
+let mapleader = " "
 
 set number relativenumber
 set expandtab shiftwidth=4 tabstop=4
@@ -14,9 +15,6 @@ set cursorline
 " TODO: add list characters
 nnoremap <Leader>l :set list!<CR>
 
-let mapleader = " "
-nnoremap <Leader>O O<Esc>j
-nnoremap <Leader>o o<Esc>k
 
 " Windows
 nnoremap <C-Up> :wincmd k<CR>
@@ -33,6 +31,8 @@ nnoremap <Leader>D :bd!<CR>
 
 nnoremap yw yiw
 nnoremap <S-y> y$
+nnoremap <Leader>O O<Esc>j
+nnoremap <Leader>o o<Esc>k
 
 nnoremap <Leader>w :set wrap!<CR>
 
