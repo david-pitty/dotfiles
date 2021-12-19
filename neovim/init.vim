@@ -1,8 +1,44 @@
 syntax enable
-set number
-set relativenumber
-set ignorecase
-set smartcase
+
+set number relativenumber
+set expandtab shiftwidth=4 tabstop=4
+
+" Search
+set ignorecase smartcase
+nnoremap <Leader><Esc> :nohlsearch<CR>
+
 set showcmd
+set nowrap
+set cursorline
+
+" TODO: add list characters
+nnoremap <Leader>l :set list!<CR>
 
 let mapleader = " "
+nnoremap <Leader>O O<Esc>j
+nnoremap <Leader>o o<Esc>k
+
+" Windows
+nnoremap <C-Up> :wincmd k<CR>
+nnoremap <C-Right> :wincmd l<CR>
+nnoremap <C-Down> :wincmd j<CR>
+nnoremap <C-Left> :wincmd h<CR>
+
+" Buffers
+nnoremap <Leader>\| :vert ba<cr>
+nnoremap <S-Right> :bn<CR>
+nnoremap <S-Left> :bp<CR>
+nnoremap <Leader>d :bd<CR>
+nnoremap <Leader>D :bd!<CR>
+
+nnoremap yw yiw
+nnoremap <S-y> y$
+
+nnoremap <Leader>w :set wrap!<CR>
+
+nnoremap <Leader>n :enew<CR>
+
+nnoremap <Leader>B :windo set scrollbind!<CR>
+
+"suppress visual mode
+noremap Q <nop>
