@@ -1,12 +1,14 @@
 syntax enable
 let mapleader = " "
 
+set path+=**
+
 set number relativenumber
 set expandtab shiftwidth=4 tabstop=4
 
 " Search
 set ignorecase smartcase
-nnoremap <Leader><Esc> :nohlsearch<CR>
+nnoremap <C-c> :nohlsearch<CR>
 
 set showcmd
 set nowrap
