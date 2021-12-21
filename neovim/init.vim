@@ -17,6 +17,11 @@ set cursorline
 " TODO: add list characters
 nnoremap <Leader>l :set list!<CR>
 
+" File explorer
+nnoremap <C-E> :Lexplore<CR>
+let g:netrw_banner=0
+let g:netrw_browse_split=4
+let g:netrw_liststyle=3
 
 " Windows
 nnoremap <C-Up> :wincmd k<CR>
