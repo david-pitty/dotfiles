@@ -33,7 +33,7 @@ function gma { git merge --abort }
 function gb { git branch }
 function gba { git branch -a }
 function gbd { git branch -D $args }
-function ga { git add $args1 }
+function ga { git add $args }
 function gga { git commit -av }
 function gc { git commit -v }
 function gp { git push }
