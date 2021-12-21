@@ -11,11 +11,11 @@ Set-Alias vi nvim
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 Set-Alias g findstr
 Set-Alias vi nvim
-function head($1) { Get-Content -Head 10 $1 }
-function tail($1) { Get-Content -Tail 10 $1 }
+function head { Get-Content -Head 10 $args }
+function tail { Get-Content -Tail 10 $args }
 
 # Git Commands
-function gcl($1) { git clone $1}
+function gcl { git clone args1}
 function gf { git fetch }
 function gs { git status }
 function gg { git stash save }
@@ -23,40 +23,40 @@ function gg! { git stash pop }
 function ggx { git stash drop }
 function ggs { git stash list }
 function ggd { git stash show -p stash@{0} }
-function gm($1) { git merge --no-ff $1 }
+function gm { git merge --no-ff $args }
 function gma { git merge --abort }
 function gb { git branch }
 function gba { git branch -a }
-function gbd($1) { git branch -D $1 }
-function ga($1) { git add $1}
+function gbd { git branch -D $args }
+function ga { git add args1}
 function gga { git commit -av }
 function gc { git commit -v }
 function gp { git push }
 function gl { git pull }
 function glol { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit }
-function gco($1) { git checkout $1 }
+function gco { git checkout $args }
 function gcm { git checkout master }
-function gcb($1) { git checkout -b $1 }
-function grb($1) { git rebase $1 }
+function gcb { git checkout -b $args }
+function grb { git rebase $args }
 function grbm { git rebase origin/master }
 function grbd { git rebase origin/develop }
 function grbc { git rebase --continue }
 function grbs { git rebase --skip }
 function grba { git rebase --abort }
-function grt($1) { git reset $1 }
-function grh($1) { git reset --hard $1 }
-function grs($1) { git restore --staged $1 }
+function grt { git reset $args }
+function grh { git reset --hard $args }
+function grs { git restore --staged $args }
 function gt { git tag }
 function gpt { git push --tags }
-function gbl($1) { git blame $1 }
-function gmv($1) { git mv $1 }
+function gbl { git blame $args }
+function gmv { git mv $args }
 function ggp { git push origin $(git rev-parse --abbrev-ref HEAD) }
 function ggp! { git push origin +$(git rev-parse --abbrev-ref HEAD) }
 function ggpx { git push --no-verify origin $(git rev-parse --abbrev-ref HEAD) }
 function ggpx! { git push --no-verify origin +$(git rev-parse --abbrev-ref HEAD) }
 function ggl { git pull origin $(git rev-parse --abbrev-ref HEAD) }
 function gdt { git difftool }
-function gd($1) { git diff $1 }
-function gd?($1) { git diff $1~ $1 }
-function gdd($1) { git --no-pager diff --name-only $1 }
-function gdd?($1) { git --no-pager diff --name-only $1~ $1 }
+function gd { git diff $args }
+function gd? { git diff $1~ $args }
+function gdd { git --no-pager diff --name-only $args }
+function gdd? { git --no-pager diff --name-only $1~ $args }
