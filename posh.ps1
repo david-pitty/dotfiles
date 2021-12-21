@@ -11,6 +11,8 @@ Set-Alias vi nvim
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 Set-Alias g findstr
 Set-Alias vi nvim
+function head($1) { Get-Content -Head 10 $1 }
+function tail($1) { Get-Content -Tail 10 $1 }
 
 # Git Commands
 function gcl($1) { git clone $1}
