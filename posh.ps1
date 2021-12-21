@@ -15,7 +15,7 @@ function head { Get-Content -Head 10 $args }
 function tail { Get-Content -Tail 10 $args }
 
 # Git Commands
-function gcl { git clone args1}
+function gcl { git clone $args }
 function gf { git fetch }
 function gs { git status }
 function gg { git stash save }
