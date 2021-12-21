@@ -4,6 +4,7 @@ Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
 
 # Alias
 Remove-Alias gc -Force
+Remove-Alias gcb -Force
 Set-Alias which Get-Command
 Set-Alias l ls
 Set-Alias ll ls
@@ -32,7 +33,7 @@ function gma { git merge --abort }
 function gb { git branch }
 function gba { git branch -a }
 function gbd { git branch -D $args }
-function ga { git add args1}
+function ga { git add $args1 }
 function gga { git commit -av }
 function gc { git commit -v }
 function gp { git push }
