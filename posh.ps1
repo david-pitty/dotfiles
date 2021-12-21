@@ -1,6 +1,7 @@
 # Readline https://docs.microsoft.com/en-us/powershell/module/psreadline/about/about_psreadline?view=powershell-7.2
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
+Set-PSReadlineKeyHandler -Key ctrl+u -Function BackwardKillLine
 
 # Alias
 Remove-Alias gc -Force
