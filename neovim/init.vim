@@ -8,7 +8,7 @@ set expandtab shiftwidth=4 tabstop=4
 
 " Search
 set ignorecase smartcase
-nnoremap <C-c> :nohlsearch<CR>
+nnoremap <Leader><Esc> :nohlsearch<CR>
 
 set showcmd
 set nowrap

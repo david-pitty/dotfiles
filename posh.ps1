@@ -4,15 +4,19 @@ Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
 
 # Alias
 Remove-Alias gc -Force
-Set-Alias which get-command
+Set-Alias which Get-Command
 Set-Alias l ls
 Set-Alias ll ls
 Set-Alias vi nvim
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
+Set-Alias head 'C:\Program Files\Git\usr\bin\head.exe'
+Set-Alias h head
+Set-Alias tail 'C:\Program Files\Git\usr\bin\tail.exe'
 Set-Alias g findstr
 Set-Alias vi nvim
-function head { Get-Content -Head 10 $args }
-function tail { Get-Content -Tail 10 $args }
+function ns { npm start }
+function nt { npm test }
+function nr { npm run }
 
 # Git Commands
 function gcl { git clone $args }
