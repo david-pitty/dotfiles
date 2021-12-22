@@ -18,7 +18,7 @@ Set-Alias g findstr
 Set-Alias vi nvim
 function ns { npm start }
 function nt { npm test }
-function nr { npm run }
+function nr { npm run $args}
 
 # Git Commands
 function gcl { git clone $args }
