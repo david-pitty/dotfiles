@@ -16,6 +16,7 @@ Set-Alias h head
 Set-Alias tail 'C:\Program Files\Git\usr\bin\tail.exe'
 Set-Alias g findstr
 Set-Alias vi nvim
+Set-Alias open ii
 function ns { npm start }
 function nt { npm test }
 function nr { npm run $args}
