@@ -34,5 +34,5 @@ git config --global core.excludesfile "$(pwd)/gitignore_global"
 # ln -s vscode/settings.json ~/AppData/Roaming/Code/User/settings.json
 
 # NEOVIM
-mkdir -p ~/.config/nvim
-echo "execute 'source' '$(pwd)/neovim/init.vim'"
+mkdir -p ~/.config
+ln -s $(pwd)/nvim ~/.config/nvim

@@ -1,10 +1,11 @@
 syntax enable
 let mapleader = " "
-
+set mouse=a
 set path+=**
 
 set number relativenumber
 set expandtab shiftwidth=4 tabstop=4
+" filetype plugin indent on
 
 " Search
 set ignorecase smartcase
@@ -15,10 +16,11 @@ set nowrap
 set cursorline
 
 " TODO: add list characters
+set list
 nnoremap <Leader>l :set list!<CR>
 
 " File explorer
-nnoremap <C-E> :Lexplore<CR>
+nnoremap <Leader>e :Lexplore<CR>
 let g:netrw_banner=0
 let g:netrw_browse_split=4
 let g:netrw_liststyle=3
@@ -49,3 +51,21 @@ nnoremap <Leader>B :windo set scrollbind!<CR>
 
 "suppress visual mode
 noremap Q <nop>
+
+" reselect after indenting
+vnoremap < <gv
+vnoremap > >gv
+
+" Plugins
+lua require('plugins')
+lua << END
+    require'lualine'.setup()
+END
+
+if has('termguicolors')
+      set termguicolors
+endif
+
+let g:gruvbox_material_background = 'medium' "hard
+let g:gruvbox_material_ui_contrast = 'high'
+colorscheme gruvbox-material
