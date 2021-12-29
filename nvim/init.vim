@@ -1,6 +1,5 @@
 syntax enable
 let mapleader = " "
-set mouse=a
 set path+=**
 
 set number relativenumber
@@ -59,6 +58,7 @@ vnoremap > >gv
 lua require('plugins')
 lua << END
     require'lualine'.setup()
+    require'bufferline'.setup()
 END
 
 if has('termguicolors')

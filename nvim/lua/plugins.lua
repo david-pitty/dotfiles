@@ -12,6 +12,7 @@ return require('packer').startup({
       'nvim-lualine/lualine.nvim',
       requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
+    use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
 
   -- Automatically set up your configuration after cloning packer.nvim
     if packer_bootstrap then
