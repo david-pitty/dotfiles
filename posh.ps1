@@ -8,6 +8,7 @@ Set-PSReadlineKeyHandler -Key ctrl+u -Function BackwardKillLine
 Remove-Alias gc -Force
 Remove-Alias gcb -Force
 Remove-Alias gl -Force
+Remove-Alias rm -Force
 
 Set-Alias which Get-Command
 Set-Alias l ls
@@ -20,6 +21,7 @@ Set-Alias tail 'C:\Program Files\Git\usr\bin\tail.exe'
 Set-Alias g findstr
 Set-Alias vi nvim
 Set-Alias open ii
+function rm { Remove-Item -Recurse $args }
 function ns { npm start }
 function nt { npm test }
 function nr { npm run $args}
