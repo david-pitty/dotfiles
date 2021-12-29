@@ -4,8 +4,11 @@ Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
 Set-PSReadlineKeyHandler -Key ctrl+u -Function BackwardKillLine
 
 # Alias
+# Remove conflicting aliases
 Remove-Alias gc -Force
 Remove-Alias gcb -Force
+Remove-Alias gl -Force
+
 Set-Alias which Get-Command
 Set-Alias l ls
 Set-Alias ll ls
