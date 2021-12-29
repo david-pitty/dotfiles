@@ -68,3 +68,10 @@ endif
 let g:gruvbox_material_background = 'medium' "hard
 let g:gruvbox_material_ui_contrast = 'high'
 colorscheme gruvbox-material
+
+
+" avoid freezing the vim process forever, see
+" https://github.com/neovim/neovim/issues/6660
+if has('win32')
+    nmap <C-z> <Nop>
+endif
