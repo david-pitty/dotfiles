@@ -4,12 +4,6 @@ Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
 Set-PSReadlineKeyHandler -Key ctrl+u -Function BackwardKillLine
 
 # Alias
-# Remove conflicting aliases
-Remove-Alias gc -Force
-Remove-Alias gcb -Force
-Remove-Alias gl -Force
-Remove-Alias rm -Force
-
 Set-Alias which Get-Command
 Set-Alias l ls
 Set-Alias ll ls
@@ -21,12 +15,16 @@ Set-Alias tail 'C:\Program Files\Git\usr\bin\tail.exe'
 Set-Alias g findstr
 Set-Alias vi nvim
 Set-Alias open ii
+Remove-Alias rm -Force
 function rm { Remove-Item -Recurse $args }
 function ns { npm start }
 function nt { npm test }
 function nr { npm run $args}
 
 # Git Commands
+Remove-Alias gc -Force
+Remove-Alias gcb -Force
+Remove-Alias gl -Force
 function gcl { git clone $args }
 function gf { git fetch }
 function gs { git status }
@@ -72,3 +70,7 @@ function gd { git diff $args }
 function gd?($1){ git diff $1~ $1 }
 function gdd { git --no-pager diff --name-only $args }
 function gdd?($1) { git --no-pager diff --name-only $1~ $1 }
+
+# Python
+function act { venv/Scripts/Activate.ps1 }
+function deact { deactivate }
