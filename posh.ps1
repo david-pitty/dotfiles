@@ -1,3 +1,21 @@
+Import-Module Microsoft.PowerShell.Management # running first to overwrite gcb alias
+
+function prompt {
+    try {
+        $branch_prompt = ''
+        $branch = git rev-parse --abbrev-ref HEAD
+        if ($?) {
+            $branch_prompt = " ($branch)"
+        }
+        # else {
+        # }
+    } catch {}
+    Write-Host "PS" -NoNewline -ForegroundColor 'green'
+    Write-Host " $($ExecutionContext.SessionState.Path.CurrentLocation)" -NoNewline -ForegroundColor 'yellow'
+    Write-Host "$($branch_prompt)" -NoNewline -ForegroundColor 'cyan'
+    Write-Output "$('>' * ($nestedPromptLevel + 1)) "
+}
+
 # Readline https://docs.microsoft.com/en-us/powershell/module/psreadline/about/about_psreadline?view=powershell-7.2
 Set-PSReadlineKeyHandler -Key Tab -Function MenuComplete
 Set-PSReadlineKeyHandler -Key ctrl+d -Function ViExit
@@ -74,3 +92,11 @@ function gdd?($1) { git --no-pager diff --name-only $1~ $1 }
 # Python
 function act { venv/Scripts/Activate.ps1 }
 function deact { deactivate }
+
+function colors {
+    $colors = [enum]::GetValues([System.ConsoleColor])
+    Foreach ($bgcolor in $colors){
+        Foreach ($fgcolor in $colors) { Write-Host "$fgcolor|"  -ForegroundColor $fgcolor -BackgroundColor $bgcolor -NoNewLine }
+        Write-Host " on $bgcolor"
+    }
+}
