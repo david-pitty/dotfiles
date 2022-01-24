@@ -33,8 +33,8 @@ Set-Alias tail 'C:\Program Files\Git\usr\bin\tail.exe'
 Set-Alias g findstr
 Set-Alias vi nvim
 Set-Alias open ii
-Remove-Alias rm -Force
-function rm { Remove-Item -Recurse $args }
+Remove-Alias rm -Force; function rm { Remove-Item -Recurse $args }
+Remove-Alias cp -Force; function cp { Copy-Item -Recurse @args }
 function ns { npm start }
 function nt { npm test }
 function nr { npm run $args}
