@@ -23,7 +23,7 @@ alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset
 alias gco="git checkout"
 alias gcm="git checkout master"
 alias gcb="git checkout -b"
-alias grb="git rebase"
+alias grb="git rebase --rebase-merges"
 alias grbm="git rebase origin/master"
 alias grbd="git rebase origin/develop"
 alias grbc="git rebase --continue"

@@ -65,7 +65,7 @@ function glol { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Cr
 function gco { git checkout $args }
 function gcm { git checkout master }
 function gcb { git checkout -b $args }
-function grb { git rebase $args }
+function grb { git rebase --rebase-merges $args }
 function grbm { git rebase origin/master }
 function grbd { git rebase origin/develop }
 function grbc { git rebase --continue }
