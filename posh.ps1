@@ -38,6 +38,8 @@ Remove-Alias cp -Force; function cp { Copy-Item -Recurse @args }
 function ns { npm start }
 function nt { npm test }
 function nr { npm run $args}
+function gr($pattern) { Get-ChildItem -Recurse | Select-String $pattern -List }
+Remove-Alias gv -Force; function gv { findstr /V $args }
 
 # Git Commands
 Remove-Alias gc -Force
@@ -59,6 +61,7 @@ function gbd { git branch -D $args }
 function ga { git add $args }
 function gga { git commit -av }
 function gc { git commit -v }
+function gcx { git commit --no-verify -v }
 function gp { git push }
 function gl { git pull }
 function glol { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit }
