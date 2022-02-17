@@ -45,6 +45,7 @@ Remove-Alias gv -Force; function gv { findstr /V $args }
 Remove-Alias gc -Force
 Remove-Alias gcb -Force
 Remove-Alias gl -Force
+Remove-Alias gm -Force
 function gcl { git clone $args }
 function gf { git fetch }
 function gs { git status }
