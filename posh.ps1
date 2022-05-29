@@ -23,8 +23,8 @@ Set-PSReadlineKeyHandler -Key ctrl+u -Function BackwardKillLine
 
 # Alias
 Set-Alias which Get-Command
-Set-Alias l ls
-Set-Alias ll ls
+function l { Get-ChildItem -Force $args }
+function ll { Get-ChildItem -Force $args }
 Set-Alias vi nvim
 Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
 Set-Alias head 'C:\Program Files\Git\usr\bin\head.exe'
