@@ -26,7 +26,7 @@ echo "source-file $(pwd)/tmux.conf" >> ~/.tmux.conf
 # cat ./minttyrc > ~/.minttyrc
 
 # GIT
-git config --global include.path "$(pwd)/gitcofig"
+git config --global include.path "$(pwd)/gitconfig"
 git config --global core.excludesfile "$(pwd)/gitignore_global"
 
 # VSCODE
