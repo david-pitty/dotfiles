@@ -41,6 +41,7 @@ function nr { npm run $args}
 function gr($pattern) { Get-ChildItem -Recurse | Select-String $pattern -List }
 Remove-Alias gv -Force; function gv { findstr /V $args }
 Set-Alias docker podman
+function tree { erd --suppress-size }
 
 # Git Commands
 Remove-Alias gc -Force
