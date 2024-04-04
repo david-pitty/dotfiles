@@ -1,9 +1,10 @@
 [push]
 	default = simple
 [alias]
-    adds = commit -av
+	adds = commit -av
 	commits = commit -v
 	logs = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	branches = branch -a
 [core]
 	editor = nvim
 	ignorecase = true
