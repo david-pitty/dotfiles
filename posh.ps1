@@ -60,6 +60,7 @@ function gba { git branch -a }
 function gbd { git branch -D $args }
 function ga { git add $args }
 function gga { git commit -av }
+function gga! { git add .; git commit --amend --no-edit }
 function gc { git commit -v }
 function gcx { git commit --no-verify -v }
 function gc! { git commit --amend --no-edit }
