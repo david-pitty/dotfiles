@@ -26,8 +26,14 @@ alias nr="npm run"
 alias ns="npm start"
 alias nt="npm test"
 
+# mac
 if [[ `uname` == 'Darwin' ]]; then
     alias ls='ls -G'
 else
     alias ls='ls --color'
+fi
+
+# wsl
+if [ -f "/etc/wsl.conf" ]; then
+    alias open="explorer.exe"
 fi
