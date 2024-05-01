@@ -26,11 +26,8 @@ Set-Alias which Get-Command
 function l { Get-ChildItem -Force $args }
 function ll { Get-ChildItem -Force $args }
 Set-Alias vi nvim
-Set-Alias less 'C:\Program Files\Git\usr\bin\less.exe'
-Set-Alias head 'C:\Program Files\Git\usr\bin\head.exe'
 Set-Alias h head
-Set-Alias tail 'C:\Program Files\Git\usr\bin\tail.exe'
-Set-Alias g findstr
+Set-Alias g grep
 Set-Alias vi nvim
 Set-Alias open ii
 Remove-Alias rm -Force; function rm { Remove-Item -Recurse $args }
