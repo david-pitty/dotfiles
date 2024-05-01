@@ -35,7 +35,7 @@ Remove-Alias cp -Force; function cp { Copy-Item -Recurse @args }
 function ns { npm start }
 function nt { npm test }
 function nr { npm run $args}
-function gr($pattern) { Get-ChildItem -Recurse | Select-String $pattern -List }
+function gr($pattern, $path) { Get-ChildItem -Recurse $path | Select-String $pattern -List }
 Remove-Alias gv -Force; function gv { findstr /V $args }
 Set-Alias docker podman
 function tree { erd --suppress-size }
@@ -55,7 +55,7 @@ function ggs { git stash list }
 function ggd { git stash show -p stash@{0} }
 function gm { git merge --no-ff $args }
 function gma { git merge --abort }
-function gb { git branch }
+function gb { git branch $args }
 function gba { git branch -a }
 function gbd { git branch -D $args }
 function ga { git add $args }
