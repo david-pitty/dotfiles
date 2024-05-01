@@ -62,6 +62,7 @@ function ga { git add $args }
 function gga { git commit -av }
 function gc { git commit -v }
 function gcx { git commit --no-verify -v }
+function gc! { git commit --amend --no-edit }
 function gp { git push }
 function gl { git pull }
 function glol { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit }
