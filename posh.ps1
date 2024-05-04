@@ -28,14 +28,14 @@ function ll { Get-ChildItem -Force $args }
 Set-Alias vi nvim
 Set-Alias h head
 Set-Alias g grep
+function gr { grep -r $args }
 Set-Alias vi nvim
 Set-Alias open ii
-Remove-Alias rm -Force; function rm { Remove-Item -Recurse $args }
+Remove-Alias rm -Force; function rm { rm -rf }
 Remove-Alias cp -Force; function cp { Copy-Item -Recurse @args }
 function ns { npm start }
 function nt { npm test }
 function nr { npm run $args}
-function gr { grep -r $args }
 Remove-Alias gv -Force; function gv { findstr /V $args }
 Set-Alias docker podman
 function tree { erd --suppress-size }
