@@ -35,7 +35,7 @@ Remove-Alias cp -Force; function cp { Copy-Item -Recurse @args }
 function ns { npm start }
 function nt { npm test }
 function nr { npm run $args}
-function gr($pattern, $path) { Get-ChildItem -Recurse $path | Select-String $pattern -List }
+function gr { grep -r $args }
 Remove-Alias gv -Force; function gv { findstr /V $args }
 Set-Alias docker podman
 function tree { erd --suppress-size }
