@@ -39,6 +39,7 @@ function nr { npm run $args}
 Remove-Alias gv -Force; function gv { findstr /V $args }
 Set-Alias docker podman
 function tree { erd --suppress-size }
+Remove-Alias diff -Force
 
 # Git Commands
 Remove-Alias gc -Force
