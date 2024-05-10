@@ -25,20 +25,22 @@ Set-PSReadlineKeyHandler -Key ctrl+u -Function BackwardKillLine
 Set-Alias which Get-Command
 function l { Get-ChildItem -Force $args }
 function ll { Get-ChildItem -Force $args }
-Set-Alias vi nvim
-Set-Alias h head
-Set-Alias g grep
-function gr { grep -r $args }
-Set-Alias vi nvim
-Set-Alias open ii
-Remove-Alias rm -Force
-Remove-Alias cp -Force; function cp { Copy-Item -Recurse @args }
+
+function g { grep -n $args }
+Remove-Alias gi -Force; function gi { grep -in $args }
+function gr { grep -rn $args }
+function gri { grep -irn $args }
+
 function ns { npm start }
 function nt { npm test }
 function nr { npm run $args}
+
+Set-Alias vi nvim
+Set-Alias h head
+Set-Alias open Invoke-Item
+Remove-Alias rm -Force
+Remove-Alias cp -Force; function cp { Copy-Item -Recurse @args }
 Remove-Alias gv -Force; function gv { findstr /V $args }
-Set-Alias docker podman
-function tree { erd --suppress-size }
 Remove-Alias diff -Force
 
 # Git Commands
