@@ -31,7 +31,7 @@ Set-Alias g grep
 function gr { grep -r $args }
 Set-Alias vi nvim
 Set-Alias open ii
-Remove-Alias rm -Force; function rm { rm -rf }
+Remove-Alias rm -Force
 Remove-Alias cp -Force; function cp { Copy-Item -Recurse @args }
 function ns { npm start }
 function nt { npm test }
