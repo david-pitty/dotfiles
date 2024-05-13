@@ -26,7 +26,7 @@ Set-Alias which Get-Command
 function l { Get-ChildItem -Force $args }
 function ll { Get-ChildItem -Force $args }
 
-function g { grep -n $args }
+Set-Alias g grep
 Remove-Alias gi -Force; function gi { grep -in $args }
 function gr { grep -rn $args }
 function gri { grep -irn $args }
