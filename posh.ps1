@@ -79,6 +79,7 @@ function grbd { git rebase origin/develop }
 function grbc { git rebase --continue }
 function grbs { git rebase --skip }
 function grba { git rebase --abort }
+function grbo ($commit, $branch) { git rebase --onto $branch $commit }
 function grt { git reset $args }
 function grh { git reset --hard $args }
 function grs { git restore --staged $args }
