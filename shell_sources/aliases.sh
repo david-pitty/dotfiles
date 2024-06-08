@@ -1,4 +1,3 @@
-alias echo="echo -n"
 alias rm="rm -rf"
 alias grep="grep  -in --color=auto"
 alias mkdir="mkdir -p"

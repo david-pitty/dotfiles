@@ -23,6 +23,9 @@ nnoremap <Leader>e :Lexplore<CR>
 let g:netrw_banner=0
 let g:netrw_liststyle=3
 
+" Save
+nnoremap <C-s> :w<CR>
+
 " Windows
 nnoremap <C-Up> :wincmd k<CR>
 nnoremap <C-Right> :wincmd l<CR>

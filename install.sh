@@ -1,5 +1,3 @@
-unalias echo
-
 # BASH
 # echo "if [ -f ~/.bashrc ]; then . ~/.bashrc; fi" > ~/.bash_profile
 echo "source $(pwd)/shell_sources/bashrc" >> ~/.bashrc
