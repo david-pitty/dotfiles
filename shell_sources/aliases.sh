@@ -24,6 +24,7 @@ alias cp="cp -a"
 alias nr="npm run"
 alias ns="npm start"
 alias nt="npm test"
+alias service-all="service --status-all"
 
 # mac
 if [[ `uname` == 'Darwin' ]]; then
