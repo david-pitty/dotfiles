@@ -1,0 +1,11 @@
+# Ctags
+- install universal `scoop install extras/universal-ctags`
+- from root of project run command `ctags -R source/.../*`
+
+## In nvim
+- `Ctrl + ]` navigate to tag
+- :tn for next match
+- :tp for previous match
+- :tj for list of matches to choose
+
+Tip: to repeat command do `@:` (can hold Raise layer)
