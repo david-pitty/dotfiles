@@ -16,6 +16,7 @@ set cursorline
 
 " Folds
 set foldmethod=indent
+set foldlevelstart=99
 
 " TODO: add list characters
 set list
