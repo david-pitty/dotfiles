@@ -14,6 +14,9 @@ set showcmd
 set nowrap
 set cursorline
 
+" Folds
+set foldmethod=indent
+
 " TODO: add list characters
 set list
 nnoremap <Leader>l :set list!<CR>

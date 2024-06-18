@@ -9,3 +9,11 @@
 - :tj for list of matches to choose
 
 Tip: to repeat command do `@:` (can hold Raise layer)
+
+
+# Folds
+zM fold all
+zR unfold all
+
+zA toggle fold recursively
+za toggle fold
