@@ -4,7 +4,7 @@ set path+=**
 
 set number relativenumber
 set expandtab shiftwidth=4 tabstop=4
-" filetype plugin indent on
+filetype plugin on
 
 " Search
 set ignorecase smartcase

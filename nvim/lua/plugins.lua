@@ -13,6 +13,7 @@ return require('packer').startup({
       requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
+    use 'sheerun/vim-polyglot'
 
   -- Automatically set up your configuration after cloning packer.nvim
     if packer_bootstrap then
