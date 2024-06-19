@@ -2,16 +2,18 @@ Import-Module Microsoft.PowerShell.Management # running first to overwrite gcb a
 
 function prompt {
     try {
+        $repo_name = $(git rev-parse --show-toplevel | grep -oE "[^/]+$")
         $branch_prompt = ''
         $branch = git rev-parse --abbrev-ref HEAD
         if ($?) {
-            $branch_prompt = " ($branch)"
+            $branch_prompt = " ($repo_name`: $branch)"
         }
         # else {
         # }
     } catch {}
     Write-Host "PS" -NoNewline -ForegroundColor 'green'
-    Write-Host " $($ExecutionContext.SessionState.Path.CurrentLocation)" -NoNewline -ForegroundColor 'yellow'
+    Write-Host " $((Get-Item $PWD).Name)" -NoNewline -ForegroundColor 'yellow'
+    # Write-Host " $($ExecutionContext.SessionState.Path.CurrentLocation)" -NoNewline -ForegroundColor 'yellow' # full path
     Write-Host "$($branch_prompt)" -NoNewline -ForegroundColor 'cyan'
     Write-Output "$('>' * ($nestedPromptLevel + 1)) "
 }
