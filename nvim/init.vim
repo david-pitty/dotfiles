@@ -31,7 +31,14 @@ let g:netrw_liststyle=3
 nnoremap <C-s> :w<CR>
 
 " Files
-nnoremap <C-P> :e **/
+nnoremap <C-P> :find *
+
+" Movement
+" change r for substitute
+nnoremap r s
+nnoremap R S
+" use s for movement instead of l
+nnoremap s l
 
 " Windows
 nnoremap <C-Up> :wincmd k<CR>
