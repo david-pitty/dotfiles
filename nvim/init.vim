@@ -9,7 +9,9 @@ filetype plugin on
 " Search
 set ignorecase smartcase
 nnoremap <Leader><Esc> :nohlsearch<CR>
+set grepprg=git\ grep
 
+" UI
 set showcmd
 set nowrap
 set cursorline
