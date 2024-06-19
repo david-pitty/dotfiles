@@ -17,3 +17,7 @@ zR unfold all
 
 zA toggle fold recursively
 za toggle fold
+
+
+# Minimal vim
+https://www.youtube.com/watch?v=XA2WjJbmmoM
