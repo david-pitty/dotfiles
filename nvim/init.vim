@@ -10,7 +10,7 @@ filetype plugin on
 " Search
 set ignorecase smartcase
 nnoremap <Leader><Esc> :nohlsearch<CR>
-set grepprg=git\ grep
+set grepprg=git\ grep\ -n
 
 " UI
 set showcmd
