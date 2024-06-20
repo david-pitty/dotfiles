@@ -32,9 +32,6 @@ let g:netrw_liststyle=3
 " Save
 nnoremap <C-s> :w<CR>
 
-" Files
-nnoremap <C-P> :find *
-
 " Movement
 " change r for substitute
 nnoremap r s
