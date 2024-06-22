@@ -11,3 +11,6 @@ git config --global include.path "$(pwd)/gitconfig"
 
 # nvim - posh sets configuration file to be in repo now
 # Copy-Item -Recurse -Force nvim\ ~\AppData\Local\
+
+# alacritty
+echo 'import=["~/projects/dotfiles/alacritty.toml"]' > ~\AppData\Roaming\alacritty\alacritty.toml
