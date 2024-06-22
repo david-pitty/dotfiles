@@ -9,5 +9,5 @@ scoop install git jq neovim erd busybox extras/universal-ctags nerd-fonts/Hack-N
 # git
 git config --global include.path "$(pwd)/gitconfig"
 
-# nvim
-Copy-Item -Recurse -Force nvim\ ~\AppData\Local\
+# nvim - posh sets configuration file to be in repo now
+# Copy-Item -Recurse -Force nvim\ ~\AppData\Local\

@@ -112,3 +112,6 @@ function colors {
         Write-Host " on $bgcolor"
     }
 }
+
+# Environment variables
+$env:XDG_CONFIG_HOME = "~/projects/dotfiles"
