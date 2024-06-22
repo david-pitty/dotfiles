@@ -4,6 +4,8 @@ if fn.empty(fn.glob(install_path)) > 0 then
   packer_bootstrap = fn.system({'git', 'clone', '--depth', '1', 'https://github.com/wbthomason/packer.nvim', install_path})
 end
 
+require('nvim-tree').setup()
+
 return require('packer').startup({
   function(use)
     use 'wbthomason/packer.nvim'
@@ -14,6 +16,7 @@ return require('packer').startup({
     }
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
     use 'sheerun/vim-polyglot'
+    use 'nvim-tree/nvim-tree.lua'
 
   -- Automatically set up your configuration after cloning packer.nvim
     if packer_bootstrap then

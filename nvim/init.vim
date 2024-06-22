@@ -26,9 +26,9 @@ set list
 nnoremap <Leader>l :set list!<CR>
 
 " File explorer
-nnoremap <Leader>e :Lexplore<CR>
-let g:netrw_banner=0
-let g:netrw_liststyle=3
+let g:loaded_netrw = 1
+let g:loaded_netrwPlugin = 1
+nnoremap <Leader>e :NvimTreeToggle<CR>
 
 " Save
 nnoremap <C-s> :w<CR>
@@ -70,6 +70,14 @@ noremap Q <nop>
 " reselect after indenting
 vnoremap < <gv
 vnoremap > >gv
+
+" Refresh nvim config
+if !exists('*Refresh')
+    function! Refresh()
+        source $MYVIMRC
+    endfunction
+endif
+command! Refresh call Refresh()
 
 " Plugins
 lua require('plugins')
