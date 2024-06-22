@@ -86,6 +86,7 @@ lua require('plugins')
 lua << END
     require'lualine'.setup()
     require'bufferline'.setup()
+    require'nvim-tree'.setup()
 END
 
 if has('termguicolors')
