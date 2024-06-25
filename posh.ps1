@@ -33,8 +33,8 @@ Remove-Alias gi -Force; function gi { grep -in $args }
 function gr { grep -rn $args }
 function gri { grep -irn $args }
 
-function ns { npm start }
-function nt { npm test }
+function ns { npm start $args }
+function nt { npm test $args }
 function nr { npm run $args}
 
 Set-Alias vi nvim
@@ -64,20 +64,16 @@ function gb { git branch $args }
 function gba { git branch -a }
 function gbd { git branch -D $args }
 function ga { git add $args }
-function gga { git commit -av }
-function gga! { git add .; git commit --amend --no-edit }
-function gc { git commit -v }
-function gcx { git commit --no-verify -v }
-function gc! { git commit --amend --no-edit }
+function gga { git commit -av $args }
+function gga! { git add .; git commit --amend --no-edit $args }
+function gc { git commit -v $args }
+function gc! { git commit --amend --no-edit $args }
 function gp { git push }
 function gl { git pull }
 function glol { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit }
 function gco { git checkout $args }
-function gcm { git checkout master }
 function gcb { git checkout -b $args }
 function grb { git rebase --rebase-merges $args }
-function grbm { git rebase origin/master }
-function grbd { git rebase origin/develop }
 function grbc { git rebase --continue }
 function grbs { git rebase --skip }
 function grba { git rebase --abort }
@@ -97,9 +93,9 @@ function ggl { git pull origin $(git rev-parse --abbrev-ref HEAD) }
 function gdt { git difftool }
 function gd { git diff $args }
 function gdf { git diff -W $args } # full context
-function gd?($1){ git diff $1~ $1 }
+function gd?($1){ git diff $1~ $1 $args }
 function gdd { git --no-pager diff --name-only $args }
-function gdd?($1) { git --no-pager diff --name-only $1~ $1 }
+function gdd?($1) { git --no-pager diff --name-only $1~ $1 $args }
 
 # Python
 function act { venv/Scripts/Activate.ps1 }
