@@ -1,7 +1,7 @@
 syntax enable
 let mapleader = " "
 set path+=**
-set wildignore+=venv/*,.git/*,obj/*,bin/*
+set wildignore+=**/venv/*,**/.git/*,**/obj/*,**/bin/*
 
 set number relativenumber
 set expandtab shiftwidth=4 tabstop=4
