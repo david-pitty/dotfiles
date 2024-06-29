@@ -1,7 +1,5 @@
 take () {
   mkdir -p $@ && cd $_;
 }
-
-export GCM_CREDENTIAL_STORE=gpg
 export EDITOR=vim
 stty -ixon
