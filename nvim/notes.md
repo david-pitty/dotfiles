@@ -1,20 +1,21 @@
+# fighting one eyed kirby  \(*.\)
+`:%s/start-pattern\(.*\)end-pattern/\1`
+- the fighting one eyed kirby is a capture group that is used as the replace value at the end
+- start pattern is require, cannot be just star anything `.*`
+
+
 # Ctags
 - install universal `scoop install extras/universal-ctags`
 - from root of project run command `ctags -R source/.../*`
 
-## In nvim
-- `Ctrl + ]` navigate to tag
-- :tn for next match
-- :tp for previous match
-- :tj for list of matches to choose
 
+# Repeat previous command
 Tip: to repeat command do `@:` (can hold Raise layer)
 
 
 # Folds
-zM fold all
-zR unfold all
-
+zM fold all [Minimize]
+zR unfold all [Restore]
 zA toggle fold recursively
 za toggle fold
 

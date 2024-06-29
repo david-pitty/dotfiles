@@ -61,6 +61,7 @@ nnoremap <Leader>cn :cnext<CR>
 nnoremap <Leader>cp :cprevious<CR>
 
 " Tag list
+" `Ctrl + ]` navigate to tag
 nnoremap <Leader>to :tselect<CR>
 nnoremap <Leader>tn :tnext<CR>
 nnoremap <Leader>tp :tprevious<CR>
