@@ -13,4 +13,5 @@ git config --global include.path "$(pwd)/gitconfig"
 # Copy-Item -Recurse -Force nvim\ ~\AppData\Local\
 
 # alacritty
+md -Force ~\AppData\Roaming\alacritty
 echo 'import=["~/projects/dotfiles/alacritty.toml"]' > ~\AppData\Roaming\alacritty\alacritty.toml
