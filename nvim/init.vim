@@ -55,6 +55,17 @@ nnoremap <S-Left> :bp<CR>
 nnoremap <Leader>d :bd<CR>
 nnoremap <Leader>D :bd!<CR>
 
+" Quickfix list
+nnoremap <Leader>co :copen<CR>
+nnoremap <Leader>cn :cnext<CR>
+nnoremap <Leader>cp :cprevious<CR>
+
+" Tag list
+nnoremap <Leader>to :tselect<CR>
+nnoremap <Leader>tn :tnext<CR>
+nnoremap <Leader>tp :tprevious<CR>
+
+
 nnoremap yw yiw
 nnoremap <S-y> y$
 nnoremap <Leader>O O<Esc>j
