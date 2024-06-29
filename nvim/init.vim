@@ -66,6 +66,20 @@ nnoremap <Leader>to :tselect<CR>
 nnoremap <Leader>tn :tnext<CR>
 nnoremap <Leader>tp :tprevious<CR>
 
+" Surround
+function! Surround()
+    let char = nr2char(getchar())
+    let char2 = substitute(char, '(', ')', '')
+    let char2 = substitute(char2, '[', ']', '')
+    let char2 = substitute(char2, '{', '}', '')
+    let sub_cmd = ':s/\%V\(.*\%V.\)/' . char . '\1' . char2
+    execute sub_cmd
+endfunction
+xnoremap <Leader>S :<C-U>call Surround()<CR>
+
+" add at the end of the line
+xnoremap <Leader>A :norm A
+
 
 nnoremap yw yiw
 nnoremap <S-y> y$
