@@ -7,7 +7,8 @@ end
 return require('packer').startup({
   function(use)
     use 'wbthomason/packer.nvim'
-    use 'sainnhe/gruvbox-material'
+    -- use 'sainnhe/gruvbox-material'
+    use 'flazz/vim-colorschemes'
     use {
       'nvim-lualine/lualine.nvim',
       requires = {'kyazdani42/nvim-web-devicons', opt = true}

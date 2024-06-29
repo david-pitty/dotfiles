@@ -93,9 +93,9 @@ if has('termguicolors')
       set termguicolors
 endif
 
-let g:gruvbox_material_background = 'medium' "hard
-let g:gruvbox_material_ui_contrast = 'high'
-colorscheme gruvbox-material
+" let g:gruvbox_material_background = 'medium' "hard
+" let g:gruvbox_material_ui_contrast = 'high'
+colorscheme Atelier_CaveDark
 
 
 " avoid freezing the vim process forever, see
