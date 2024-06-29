@@ -7,6 +7,8 @@
 # Ctags
 - install universal `scoop install extras/universal-ctags`
 - from root of project run command `ctags -R source/.../*`
+- `Ctrl+W+]` opens tag definition in a new window
+- ref: https://www.youtube.com/watch?v=iNNcCo5djio
 
 
 # Repeat previous command
@@ -20,5 +22,15 @@ zA toggle fold recursively
 za toggle fold
 
 
+# Visual mode
+When selecting a word, and doing substitution, use `\%V` as anchor tags
+for the start and end of selection to avoid getting matches before search pattern.
+
+
 # Minimal vim
 https://www.youtube.com/watch?v=XA2WjJbmmoM
+
+
+
+# TODO:
+Look into fzf and integration https://www.youtube.com/watch?v=MvLQor1Ck3M
