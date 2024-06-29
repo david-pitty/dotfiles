@@ -67,6 +67,7 @@ nnoremap <Leader>tn :tnext<CR>
 nnoremap <Leader>tp :tprevious<CR>
 
 " Surround
+" TODO: use marks to not lose spot in line after surround function runs
 function! Surround()
     let char = nr2char(getchar())
     let char2 = substitute(char, '(', ')', '')
