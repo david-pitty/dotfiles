@@ -87,7 +87,17 @@ function! Surround()
     let sub_cmd = ':s/\%V\(.*\%V.\)/' . char . '\1' . char2
     execute sub_cmd
 endfunction
-xnoremap <Leader>S :<C-U>call Surround()<CR>
+xnoremap <leader>s :<c-u>call Surround()<cr>
+
+function! SurroundLines()
+    let char = nr2char(getchar())
+    let char2 = substitute(char, '(', ')', '')
+    let char2 = substitute(char2, '[', ']', '')
+    let char2 = substitute(char2, '{', '}', '')
+    let sub_cmd = ":'<,'>s/\\(.*\\)/" . char . "\\1" . char2
+    execute sub_cmd
+endfunction
+xnoremap <leader>S :<c-u>call SurroundLines()<cr>
 
 " add at the end of the line
 xnoremap <Leader>A :norm A
