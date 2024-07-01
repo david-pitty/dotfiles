@@ -75,7 +75,7 @@ nnoremap <Leader>tp :tprevious<CR>
 
 " Navigate code
 " all references
-nnoremap <Leader>r yiw:vim /\.<C-r>0(/ **<CR>
+nnoremap <Leader>r yiw:vim /\.<C-r>0(/ ** \| copen<CR>
 
 " Surround
 " TODO: use marks to not lose spot in line after surround function runs
