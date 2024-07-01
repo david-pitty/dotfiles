@@ -37,10 +37,10 @@ nnoremap <C-s> :w<CR>
 
 " Movement
 " change r for substitute
-nnoremap r s
+noremap r s
 nnoremap R S
 " use s for movement instead of l
-nnoremap s l
+noremap s l
 
 " Windows
 nnoremap <C-Up> :wincmd k<CR>
@@ -72,6 +72,10 @@ nnoremap <Leader>cp :cprevious<CR>
 nnoremap <Leader>to :tselect<CR>
 nnoremap <Leader>tn :tnext<CR>
 nnoremap <Leader>tp :tprevious<CR>
+
+" Navigate code
+" all references
+nnoremap <Leader>r yiw:vim /\.<C-r>0(/ **<CR>
 
 " Surround
 " TODO: use marks to not lose spot in line after surround function runs
