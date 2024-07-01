@@ -30,6 +30,8 @@ let g:loaded_netrw = 1
 let g:loaded_netrwPlugin = 1
 nnoremap <Leader>e :NvimTreeToggle<CR>
 
+nnoremap <Leader>p :find *
+
 " Save
 nnoremap <C-s> :w<CR>
 
