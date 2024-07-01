@@ -1,7 +1,7 @@
 syntax enable
 let mapleader = " "
 set path+=**
-set wildignore+=**/venv/*,**/.git/*,**/obj/*,**/bin/*
+set wildignore+=**/venv/*,**/.git/*,**/obj/*,**/bin/*,**/__pycache__/*,tags
 
 set number relativenumber
 set expandtab shiftwidth=4 tabstop=4
@@ -47,6 +47,11 @@ nnoremap <C-Down> :wincmd j<CR>
 nnoremap <C-Left> :wincmd h<CR>
 nnoremap <C-w>v :vsplit <BAR> wincmd l<CR>
 nnoremap <C-w>s :split <BAR> wincmd j<CR>
+" resize
+nnoremap <S-Up> :resize +10<CR>
+nnoremap <S-Down> :resize -10<CR>
+nnoremap + :vertical resize +10<CR>
+nnoremap - :vertical resize -10<CR>
 
 " Buffers
 nnoremap <Leader>\| :vert ba<cr>
