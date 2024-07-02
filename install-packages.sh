@@ -1,5 +1,4 @@
-sudo add-apt-repository ppa:neovim-ppa/unstable
-sudo apt update
-sudo apt upgrade
+add-apt-repository ppa:neovim-ppa/unstable
+apt update && apt upgrade
 
-sudo apt install tree tmux build-essential gcc neovim neofetch unzip
+apt install tree tmux build-essential gcc neovim neofetch unzip python3-pip
