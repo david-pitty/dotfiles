@@ -29,7 +29,7 @@ function l { Get-ChildItem -Force $args }
 function ll { Get-ChildItem -Force $args }
 
 Set-Alias g grep
-function ggrep { git grep $args }
+function ggrep { git grep -nE $args }
 Remove-Alias gi -Force; function gi { grep -in $args }
 function gr { grep -rn $args }
 function gri { grep -irn $args }
