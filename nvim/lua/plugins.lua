@@ -14,7 +14,6 @@ return require('packer').startup({
       requires = {'kyazdani42/nvim-web-devicons', opt = true}
     }
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
-    use 'sheerun/vim-polyglot'
     use 'nvim-tree/nvim-tree.lua'
 
   -- Automatically set up your configuration after cloning packer.nvim

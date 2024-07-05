@@ -48,7 +48,6 @@ nnoremap <C-Right> :wincmd l<CR>
 nnoremap <C-Down> :wincmd j<CR>
 nnoremap <C-Left> :wincmd h<CR>
 nnoremap <C-w>v :vsplit <BAR> wincmd l<CR>
-nnoremap <C-w>s :split <BAR> wincmd j<CR>
 " resize
 nnoremap <S-Up> :resize +10<CR>
 nnoremap <S-Down> :resize -10<CR>
@@ -128,6 +127,26 @@ noremap Q <nop>
 vnoremap < <gv
 vnoremap > >gv
 
+
+if has('termguicolors')
+      set termguicolors
+endif
+
+" let g:gruvbox_material_background = 'medium' "hard
+" let g:gruvbox_material_ui_contrast = 'high'
+"set background=light
+"colorscheme Atelier_ForestLight
+"
+"colorscheme Atelier_CaveDark
+colorscheme vim-material
+
+
+" avoid freezing the vim process forever, see
+" https://github.com/neovim/neovim/issues/6660
+if has('win32')
+    nmap <C-z> <Nop>
+endif
+
 " Refresh nvim config
 if !exists('*Refresh')
     function! Refresh()
@@ -144,17 +163,3 @@ lua << END
     require'nvim-tree'.setup()
 END
 
-if has('termguicolors')
-      set termguicolors
-endif
-
-" let g:gruvbox_material_background = 'medium' "hard
-" let g:gruvbox_material_ui_contrast = 'high'
-colorscheme Atelier_CaveDark
-
-
-" avoid freezing the vim process forever, see
-" https://github.com/neovim/neovim/issues/6660
-if has('win32')
-    nmap <C-z> <Nop>
-endif
