@@ -106,6 +106,7 @@ endfunction
 xnoremap <leader>S :<c-u>call SurroundLines()<cr>
 
 " add at the end of the line
+xnoremap I :norm I
 xnoremap <Leader>A :norm A
 
 
