@@ -48,6 +48,7 @@ nnoremap <C-Right> :wincmd l<CR>
 nnoremap <C-Down> :wincmd j<CR>
 nnoremap <C-Left> :wincmd h<CR>
 nnoremap <C-w>v :vsplit <BAR> wincmd l<CR>
+nnoremap <C-w>s :split <BAR> wincmd j<CR>
 " resize
 nnoremap <S-Up> :resize +10<CR>
 nnoremap <S-Down> :resize -10<CR>
@@ -90,6 +91,7 @@ function! Surround()
     let char2 = substitute(char, '(', ')', '')
     let char2 = substitute(char2, '[', ']', '')
     let char2 = substitute(char2, '{', '}', '')
+    let char2 = substitute(char2, '<', '>', '')
     let sub_cmd = ':s/\%V\(.*\%V.\)/' . char . '\1' . char2
     execute sub_cmd
 endfunction
@@ -100,6 +102,7 @@ function! SurroundLines()
     let char2 = substitute(char, '(', ')', '')
     let char2 = substitute(char2, '[', ']', '')
     let char2 = substitute(char2, '{', '}', '')
+    let char2 = substitute(char2, '<', '>', '')
     let sub_cmd = ":'<,'>s/\\(.*\\)/" . char . "\\1" . char2
     execute sub_cmd
 endfunction
