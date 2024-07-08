@@ -79,7 +79,7 @@ nnoremap <Leader>r yiw:vim /\.<C-r>0[^a-z]/ **<CR><C-o>:copen<CR>
 nnoremap <Leader>R yiw:vim /<C-r>0[^a-z]/ **<CR><C-o>:copen<CR>
 
 "Terminal
-tnoremap <Esc> <C-\><C-n>
+tnoremap <C-\> <C-\><C-n>
 if has('win32')
   set shell=pwsh
 endif
