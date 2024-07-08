@@ -54,6 +54,7 @@ Remove-Alias gm -Force
 function gcl { git clone $args }
 function gf { git fetch }
 function gs { git status }
+function gsa { git status --ignored }
 function gg { git stash save }
 function gg! { git stash pop }
 function ggx { git stash drop }
