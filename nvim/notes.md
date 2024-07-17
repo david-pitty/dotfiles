@@ -8,6 +8,7 @@
 - install universal `scoop install extras/universal-ctags`
 - from root of project run command `ctags -R source/.../*`
 - `Ctrl+W+]` opens tag definition in a new window
+- `Ctrl+X Ctrl+]` completes from tags file
 - ref: https://www.youtube.com/watch?v=iNNcCo5djio
 
 

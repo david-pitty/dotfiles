@@ -6,6 +6,8 @@ set wildignore+=**/venv/*,**/.git/*,**/obj/*,**/bin/*,**/__pycache__/*,tags
 set number relativenumber
 set expandtab shiftwidth=4 tabstop=4
 filetype plugin on
+set omnifunc=syntaxcomplete#Complete
+set tags=tags
 
 " Search
 set ignorecase smartcase
