@@ -77,8 +77,8 @@ nnoremap <Leader>tp :tprevious<CR>
 
 " Navigate code
 " all references
-nnoremap <Leader>r yiw:vim /\.<C-r>0[^a-z]/ **<CR><C-o>:copen<CR>
-nnoremap <Leader>R yiw:vim /<C-r>0[^a-z]/ **<CR><C-o>:copen<CR>
+nnoremap <Leader>r yiw:vim /\.<C-r>0[^a-z]/ **/*<CR><C-o>:copen<CR>
+nnoremap <Leader>R yiw:vim /<C-r>0[^a-z]/ **/*<CR><C-o>:copen<CR>
 
 "Terminal
 tnoremap <C-\> <C-\><C-n>
