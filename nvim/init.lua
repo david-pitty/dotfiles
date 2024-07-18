@@ -183,7 +183,7 @@ function _G.Refresh()
 end
 vim.api.nvim_create_user_command('Refresh', _G.Refresh, {})
 
+
+require('packer_startup')
 require('plugins')
-require('lualine').setup()
-require('bufferline').setup()
-require('nvim-tree').setup()
+

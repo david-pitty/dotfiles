@@ -15,6 +15,7 @@ return require('packer').startup({
     }
     use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
     use 'nvim-tree/nvim-tree.lua'
+    use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
 
     -- Automatically set up your configuration after cloning packer.nvim
     if packer_bootstrap then
