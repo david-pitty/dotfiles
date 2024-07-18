@@ -70,6 +70,7 @@ vim.api.nvim_set_keymap('n', '<Leader>D', ':bd!<CR>', { noremap = true })
 
 -- Quickfix list
 vim.api.nvim_set_keymap('n', '<Leader>co', ':copen<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>cc', ':cclose<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>cn', ':cnext<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>cp', ':cprevious<CR>', { noremap = true })
 
@@ -83,6 +84,29 @@ vim.api.nvim_set_keymap('n', '<Leader>tp', ':tprevious<CR>', { noremap = true })
 -- all references
 vim.api.nvim_set_keymap('n', '<Leader>r', 'yiw:vim /\\.<C-r>0[^a-z]/ **/*<CR><C-o>:copen<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>R', 'yiw:vim /<C-r>0[^a-z]/ **/*<CR><C-o>:copen<CR>', { noremap = true })
+
+-- Search
+function Search()
+    local pattern = vim.fn.input("Search all files: ")
+    if pattern == "" then
+        return
+    end
+
+    local cmd = string.format("vimgrep /%s/ **/*", pattern)
+    local success, _ = pcall(vim.api.nvim_command, cmd)
+    if success then
+        -- Go back to file
+        vim.api.nvim_feedkeys(vim.api.nvim_replace_termcodes("<C-o>", true, false, true), "n", true)
+
+        -- wait for feedkeys to finish
+        vim.schedule(function()
+            vim.cmd("copen")
+        end)
+    else
+        print("Not found")
+    end
+end
+vim.api.nvim_set_keymap('n', '<C-f>', ':lua Search()<CR>', { noremap = true, silent = true })
 
 -- Terminal
 vim.api.nvim_set_keymap('t', '<C-\\>', '<C-\\><C-n>', { noremap = true })
