@@ -139,8 +139,8 @@ end
 vim.api.nvim_set_keymap('x', '<leader>S', ':<C-u>lua SurroundLines()<CR>', { noremap = true, silent = true })
 
 -- add at the end of the line
-vim.api.nvim_set_keymap('x', 'I', ':norm I<CR>', { noremap = true, silent = true })
-vim.api.nvim_set_keymap('x', '<Leader>A', ':norm A<CR>', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '<Leader>i', ':norm I', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('x', '<Leader>a', ':norm A', { noremap = true, silent = true })
 
 vim.api.nvim_set_keymap('n', 'yw', 'yiw', { noremap = true, silent = true })
 vim.api.nvim_set_keymap('n', '<S-y>', 'y$', { noremap = true, silent = true })
