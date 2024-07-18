@@ -35,4 +35,3 @@ https://www.youtube.com/watch?v=XA2WjJbmmoM
 
 # TODO:
 Look into fzf and integration https://www.youtube.com/watch?v=MvLQor1Ck3M
-Setup LSP: https://github.com/williamboman/mason-lspconfig.nvim
