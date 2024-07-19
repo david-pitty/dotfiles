@@ -16,6 +16,12 @@
 Tip: to repeat command do `@:` (can hold Raise layer)
 
 
+# Vimgrep
+\C = case sensitive
+\c = case insensitive (default due to ignore case)
+`:vimgrep /test\C/ %`
+
+
 # Folds
 zM fold all [Minimize]
 zR unfold all [Restore]
