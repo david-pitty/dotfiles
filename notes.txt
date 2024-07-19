@@ -1,0 +1,4 @@
+Minimize 1 application that is maximized
+Alt + Space, N
+
+If app is not maximized, use Win + Down
