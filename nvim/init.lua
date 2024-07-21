@@ -82,8 +82,8 @@ vim.api.nvim_set_keymap('n', '<Leader>tp', ':tprevious<CR>', { noremap = true })
 
 -- Navigate code
 -- all references
-vim.api.nvim_set_keymap('n', '<Leader>r', 'yiw:vim /\\.<C-r>0[^a-z]/ **/*<CR><C-o>:copen<CR>', { noremap = true })
-vim.api.nvim_set_keymap('n', '<Leader>R', 'yiw:vim /<C-r>0[^a-z]/ **/*<CR><C-o>:copen<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>r', 'yiw:vim /\\.<C-r>0[^a-z]\\C/ **/*<CR><C-o>:copen<CR>', { noremap = true })
+vim.api.nvim_set_keymap('n', '<Leader>R', 'yiw:vim /<C-r>0[^a-z]\\C/ **/*<CR><C-o>:copen<CR>', { noremap = true })
 
 -- Search
 function Search()
