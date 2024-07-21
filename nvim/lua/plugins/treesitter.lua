@@ -1,4 +1,3 @@
-print("test")
 require'nvim-treesitter.configs'.setup {
   -- A list of parser names, or "all" (the listed parsers MUST always be installed)
   -- https://github.com/nvim-treesitter/nvim-treesitter/wiki/List-of-parsers
