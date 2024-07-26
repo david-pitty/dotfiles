@@ -113,4 +113,4 @@ function colors {
 
 # Environment variables
 # variable for neovim to search for init.vim
-$env:XDG_CONFIG_HOME = "~/projects/dotfiles"
+$env:XDG_CONFIG_HOME = $(Resolve-Path "~/projects/dotfiles").Path
