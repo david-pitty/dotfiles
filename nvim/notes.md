@@ -1,7 +1,28 @@
-# fighting one eyed kirby  \(*.\)
+# Search and replace
+
+## Fighting one eyed kirby  \(*.\)
 `:%s/start-pattern\(.*\)end-pattern/\1`
 - the fighting one eyed kirby is a capture group that is used as the replace value at the end
 - start pattern is require, cannot be just star anything `.*`
+
+## To Upper/Lowercase
+`:%s/pattern/\U\0`
+- change pattern to upper case
+- \L for lowercase
+
+## Case sensitive search
+\C = case sensitive
+\c = case insensitive (default due to ignore case)
+`:vimgrep /test\C/ %`
+- works in Vimgrep, slash search and substitude (`:%s`)
+
+
+# G commands
+## Sequence of numbers
+- set a bunch of 0s in a column
+- block select them
+- press g, then Ctrl+A
+- creates a sequence of numbers
 
 
 # Ctags
@@ -16,17 +37,12 @@
 Tip: to repeat command do `@:` (can hold Raise layer)
 
 
-# Vimgrep
-\C = case sensitive
-\c = case insensitive (default due to ignore case)
-`:vimgrep /test\C/ %`
-
-
 # Folds
 zM fold all [Minimize]
 zR unfold all [Restore]
 zA toggle fold recursively
 za toggle fold
+zi enable/disable folds (toggle)
 
 
 # Visual mode
@@ -36,6 +52,9 @@ for the start and end of selection to avoid getting matches before search patter
 
 # Minimal vim
 https://www.youtube.com/watch?v=XA2WjJbmmoM
+
+
+
 
 
 
