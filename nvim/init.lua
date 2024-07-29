@@ -110,8 +110,8 @@ vim.api.nvim_set_keymap('n', '<C-f>', ':lua Search()<CR>', { noremap = true, sil
 
 -- Terminal
 vim.api.nvim_set_keymap('t', '<C-\\>', '<C-\\><C-n>', { noremap = true })
-if vim.fn.has('termguicolors') == 1 then
-    vim.opt.termguicolors = true
+if vim.fn.has('win32') == 1 then
+  vim.opt.shell = 'pwsh'
 end
 
 -- Surround function
