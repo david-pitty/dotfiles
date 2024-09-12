@@ -27,6 +27,7 @@ Set-PSReadlineKeyHandler -Key ctrl+u -Function BackwardKillLine
 Set-Alias which Get-Command
 function l { Get-ChildItem -Force $args }
 function ll { Get-ChildItem -Force $args }
+Remove-Alias ls -Force; function ls { Get-ChildItem -Force $args | Sort-Object -Descending {$_.LastWriteTime} }
 
 Set-Alias g grep
 function ggrep { git grep -nE $args }
