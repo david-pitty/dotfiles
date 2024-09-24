@@ -42,10 +42,14 @@ function nr { npm run $args}
 Set-Alias vi nvim
 Set-Alias h head
 Set-Alias open Invoke-Item
+Set-Alias p podman
+
 Remove-Alias rm -Force
 Remove-Alias cp -Force; function cp { Copy-Item -Recurse @args }
 Remove-Alias gv -Force; function gv { findstr /V $args }
 Remove-Alias diff -Force
+function take($dirName) { mkdir $dirName && cd $dirName }
+
 
 # Git Commands
 Remove-Alias gc -Force
