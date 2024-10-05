@@ -153,6 +153,9 @@ vim.api.nvim_set_keymap('n', '<Leader>n', ':enew<CR>', { noremap = true, silent 
 
 vim.api.nvim_set_keymap('n', '<Leader>B', ':windo set scrollbind!<CR>', { noremap = true, silent = true })
 
+vim.api.nvim_set_keymap('n', 'p', 'gp', { noremap = true, silent = true })
+vim.api.nvim_set_keymap('n', 'P', 'gP', { noremap = true, silent = true })
+
 -- suppress visual mode
 vim.api.nvim_set_keymap('', 'Q', '<nop>', { noremap = true, silent = true })
 
