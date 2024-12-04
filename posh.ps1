@@ -78,6 +78,7 @@ function gc! { git commit --amend --no-edit $args }
 function gp { git push }
 function gl { git pull }
 function glol { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit }
+function gh { glol | head }
 function gco { git checkout $args }
 function gcb { git checkout -b $args }
 function grb { git rebase --rebase-merges $args }
