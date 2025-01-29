@@ -72,9 +72,12 @@ function gba { git branch -a }
 function gbd { git branch -D $args }
 function ga { git add $args }
 function gga { git commit -av $args }
+function ggax { git commit --no-verify -av $args }
 function gga! { git add .; git commit --amend --no-edit $args }
 function gc { git commit -v $args }
+function gcx { git commit --no-verify -v $args }
 function gc! { git commit --amend --no-edit $args }
+function gcx! { git commit --no-verify --amend --no-edit $args }
 function gp { git push }
 function gl { git pull }
 function glol { git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit }
