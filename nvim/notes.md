@@ -53,10 +53,13 @@ for the start and end of selection to avoid getting matches before search patter
 # Minimal vim
 https://www.youtube.com/watch?v=XA2WjJbmmoM
 
-# Move to next blank line
-use parenthesis to next text block (divided by blank line)
+# Movement
+## Move to next blank line
+Use parenthesis to next text block (divided by blank line)
 
-
+# Paste
+Paste from register in normal mode: `"<register>p`
+Paste from register in insert mode: `Ctrl-R + <register>`
 
 
 # TODO:
