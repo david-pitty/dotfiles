@@ -115,7 +115,6 @@ if vim.fn.has('win32') == 1 then
 end
 
 -- Surround function
--- TODO: use marks to not lose spot in line after surround function runs
 function Surround()
     local char = vim.fn.nr2char(vim.fn.getchar())
     local char2 = char:gsub('%(', ')')
@@ -124,6 +123,8 @@ function Surround()
                     :gsub('<', '>')
     local sub_cmd = ':s/\\%V\\(.*\\%V.\\)/' .. char .. '\\1' .. char2
     vim.cmd(sub_cmd)
+    vim.cmd('normal! n')
+    vim.cmd('nohlsearch')
 end
 vim.api.nvim_set_keymap('x', '<leader>s', ':<C-u>lua Surround()<CR>', { noremap = true, silent = true })
 
@@ -135,6 +136,7 @@ function SurroundLines()
                     :gsub('<', '>')
     local sub_cmd = ":'<,'>s/\\(.*\\)/" .. char .. "\\1" .. char2
     vim.cmd(sub_cmd)
+    vim.cmd('nohlsearch')
 end
 vim.api.nvim_set_keymap('x', '<leader>S', ':<C-u>lua SurroundLines()<CR>', { noremap = true, silent = true })
 
@@ -168,9 +170,10 @@ if vim.fn.has('termguicolors') == 1 then
 end
 
 -- vim.opt.background = 'light'
+vim.cmd('colorscheme afterglow')
 -- vim.cmd('colorscheme Atelier_ForestLight')
 -- vim.cmd('colorscheme Atelier_CaveDark')
-vim.cmd('colorscheme vim-material')
+-- vim.cmd('colorscheme vim-material')
 
 
 -- avoid freezing the vim process forever, see
