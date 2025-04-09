@@ -55,7 +55,7 @@ https://www.youtube.com/watch?v=XA2WjJbmmoM
 
 # Movement
 ## Move to next blank line
-Use parenthesis to next text block (divided by blank line)
+Use braces (`{` or `}`) to next text block
 
 # Paste
 Paste from register in normal mode: `"<register>p`
