@@ -50,6 +50,12 @@ Remove-Alias gv -Force; function gv { findstr /V $args }
 Remove-Alias diff -Force
 function take($dirName) { mkdir $dirName && cd $dirName }
 
+function ..() { cd .. }
+function ...() { cd ..\.. }
+function ....() { cd ..\..\.. }
+function .....() { cd ..\..\..\.. }
+function ......() { cd ..\..\..\..\.. }
+
 
 # Git Commands
 Remove-Alias gc -Force
