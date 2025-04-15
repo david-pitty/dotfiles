@@ -22,6 +22,7 @@ vim.opt.grepprg = 'git grep -n'
 vim.opt.showcmd = true
 vim.opt.wrap = false
 vim.opt.cursorline = true
+vim.opt.colorcolumn = '100'
 
 -- Folds
 vim.opt.foldmethod = 'indent'
