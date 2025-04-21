@@ -3,7 +3,8 @@ Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
 Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
 
 # scoop
-scoop bucket add nerd-fonts extras
+scoop bucket add nerd-fonts
+scoop bucket add extras
 # git installation through scoop may not work with credential manager
 scoop install jq neovim erd busybox extras/universal-ctags nerd-fonts/Hack-NF-Mono
 

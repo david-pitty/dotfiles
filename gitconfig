@@ -1,5 +1,5 @@
 [push]
-	default = simple
+	default = current
 [alias]
 	adds = commit -av
 	commits = commit -v
