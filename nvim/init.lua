@@ -170,13 +170,6 @@ if vim.fn.has('termguicolors') == 1 then
     vim.opt.termguicolors = true
 end
 
--- vim.opt.background = 'light'
-vim.cmd('colorscheme afterglow')
--- vim.cmd('colorscheme Atelier_ForestLight')
--- vim.cmd('colorscheme Atelier_CaveDark')
--- vim.cmd('colorscheme vim-material')
-
-
 -- avoid freezing the vim process forever, see
 -- https://github.com/neovim/neovim/issues/6660
 if vim.fn.has('win32') == 1 then
