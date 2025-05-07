@@ -44,6 +44,9 @@ Set-Alias h head
 Set-Alias open Invoke-Item
 Set-Alias p podman
 
+Set-Alias k kubectl
+function kssh($pod) { kubectl exec -it $pod -- bash }
+
 Remove-Alias rm -Force
 Remove-Alias cp -Force; function cp { Copy-Item -Recurse @args }
 Remove-Alias gv -Force; function gv { findstr /V $args }
