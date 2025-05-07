@@ -1,4 +1,4 @@
-alias rm="rm -rf"
+alias rm="rm -r"
 alias grep="grep  -in --color=auto"
 alias mkdir="mkdir -p"
 alias md="mkdir -p"
@@ -20,6 +20,8 @@ alias nr="npm run"
 alias ns="npm start"
 alias nt="npm test"
 alias service-all="service --status-all"
+alias p="podman"
+alias k="kubectl"
 
 # python
 alias act=". venv/bin/activate"
