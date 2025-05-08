@@ -21,9 +21,13 @@ alias ns="npm start"
 alias nt="npm test"
 alias service-all="service --status-all"
 alias p="podman"
+
 alias k="kubectl"
+kssh() { kubectl exec -it $1 -- bash; }
+kcmd() { kubectl exec -it $1 -- $2; } # if multi-word command ($2) wrap in quotes
 
 # python
+alias py=pyenv
 alias act=". venv/bin/activate"
 alias deact="deactivate"
 alias pprint="python -m json.tool"
@@ -39,3 +43,4 @@ fi
 if [ -f "/etc/wsl.conf" ]; then
     alias open="explorer.exe"
 fi
+
