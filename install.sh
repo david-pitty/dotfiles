@@ -14,8 +14,8 @@ echo "source $(pwd)/shell_sources/bash_prompt.sh" >> ~/.bashrc
 echo "\$include $(pwd)/inputrc" >> ~/.inputrc
 
 # vim
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-echo ":so $(pwd)/vim/vimrc" >> ~/.vimrc
+# curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+# echo ":so $(pwd)/vim/vimrc" >> ~/.vimrc
 
 # TMUX
 echo "source-file $(pwd)/tmux.conf" >> ~/.tmux.conf
@@ -34,3 +34,6 @@ git config --global core.excludesfile "$(pwd)/gitignore_global"
 # NEOVIM
 mkdir -p ~/.config
 ln -s $(pwd)/nvim ~/.config/nvim
+
+# NEOVIM - PACKER
+git clone --depth 1 https://github.com/wbthomason/packer.nvim ~/.local/share/nvim/site/pack/packer/start/packer.nvim
