@@ -1,5 +1,7 @@
 take () {
   mkdir -p $@ && cd $_;
 }
-export EDITOR=vim
+export EDITOR=nvim
+export PATH="/home/$USER/bin:$PATH"
+
 stty -ixon
