@@ -10,11 +10,23 @@
 - change pattern to upper case
 - \L for lowercase
 
+## Git grep
+`vim.opt.grepprg = 'git grep -n'`
+- Editor is currently configured to use git grep
+- Use `:grep! pattern`. Exclamation mark avoids jumping to first match
+- Results are available in quickfix window
+
 ## Case sensitive search
 \C = case sensitive
 \c = case insensitive (default due to ignore case)
-`:vimgrep /test\C/ %`
+`:grep! /test\C/ %`
 - works in Vimgrep, slash search and substitude (`:%s`)
+
+## Replace in quickfix
+After a project search `grep! pattern`
+Open the quickfix window `:copen`
+Apply the replace
+`:cdo s/pattern/replacement/g`
 
 
 # G commands
