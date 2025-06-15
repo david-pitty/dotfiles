@@ -9,18 +9,18 @@ return require('packer').startup({
         use 'wbthomason/packer.nvim'
         -- use 'sainnhe/gruvbox-material'
         use 'flazz/vim-colorschemes'
-        use {
-            'nvim-lualine/lualine.nvim',
-            requires = {'kyazdani42/nvim-web-devicons', opt = true}
-        }
+        -- use {
+        --     'nvim-lualine/lualine.nvim',
+        --     requires = {'kyazdani42/nvim-web-devicons', opt = true}
+        -- }
         use {'akinsho/bufferline.nvim', requires = 'kyazdani42/nvim-web-devicons'}
         use 'nvim-tree/nvim-tree.lua'
-        use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
-        use {
-            'williamboman/mason.nvim',
-            'williamboman/mason-lspconfig.nvim',
-            'neovim/nvim-lspconfig',
-        }
+        -- use {'nvim-treesitter/nvim-treesitter', run = ':TSUpdate'}
+        -- use {
+        --     'williamboman/mason.nvim',
+        --     'williamboman/mason-lspconfig.nvim',
+        --     'neovim/nvim-lspconfig',
+        -- }
 
         -- Automatically set up your configuration after cloning packer.nvim
         if packer_bootstrap then
