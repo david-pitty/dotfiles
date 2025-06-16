@@ -22,6 +22,7 @@ alias nt="npm test"
 alias service-all="service --status-all"
 alias p="podman"
 alias ggrep="git grep -n"
+alias update-fonts="fc-cache -fv"
 
 alias k="kubectl"
 kssh() { kubectl exec -it $1 -- bash; }
