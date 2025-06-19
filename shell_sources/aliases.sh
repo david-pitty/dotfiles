@@ -23,6 +23,7 @@ alias service-all="service --status-all"
 alias p="podman"
 alias ggrep="git grep -n"
 alias update-fonts="fc-cache -fv"
+count() { l "$1" | tail -n +4 | wc -l; }
 
 alias k="kubectl"
 kssh() { kubectl exec -it $1 -- bash; }
