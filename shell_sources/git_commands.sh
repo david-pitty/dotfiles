@@ -75,3 +75,8 @@ function gd? {
 function gdd? {
     git --no-pager diff --name-only $1~ $1
 }
+
+
+# curl -o ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
+source ~/.git-completion.bash
+__git_complete gco _git_checkout
