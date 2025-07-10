@@ -28,6 +28,7 @@ alias clip="xclip -sel clip"
 
 alias k="kubectl"
 kssh() { kubectl exec -it $1 -- bash; }
+ksh() { kubectl exec -it $1 -- /bin/sh; }
 kcmd() { kubectl exec -it $1 -- $2; } # if multi-word command ($2) wrap in quotes
 
 # python
