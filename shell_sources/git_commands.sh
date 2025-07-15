@@ -26,11 +26,8 @@ alias gl="git pull"
 alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
 alias gh="glol | head"
 alias gco="git checkout"
-alias gcm="git checkout master"
 alias gcb="git checkout -b"
 alias grb="git rebase --rebase-merges"
-alias grbm="git rebase origin/master"
-alias grbd="git rebase origin/develop"
 alias grbc="git rebase --continue"
 alias grbs="git rebase --skip"
 alias grba="git rebase --abort"
@@ -80,3 +77,5 @@ function gdd? {
 # curl -o ~/.git-completion.bash https://raw.githubusercontent.com/git/git/master/contrib/completion/git-completion.bash
 source ~/.git-completion.bash
 __git_complete gco _git_checkout
+__git_complete gcb _git_checkout
+__git_complete grb _git_rebase
