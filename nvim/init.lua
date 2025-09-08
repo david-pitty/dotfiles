@@ -27,6 +27,7 @@ vim.opt.colorcolumn = '100'
 -- Folds
 vim.opt.foldmethod = 'indent'
 vim.opt.foldlevelstart = 99
+vim.opt.foldopen:remove('search') -- do not unfold on search
 
 -- TODO: add list characters
 vim.opt.list = true
