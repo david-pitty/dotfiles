@@ -25,6 +25,7 @@ alias ggrep="git grep -n"
 alias update-fonts="fc-cache -fv"
 count() { l "$1" | tail -n +4 | wc -l; }
 alias clip="xclip -sel clip"
+alias myip="curl https://ipinfo.io/ip"
 
 alias k="kubectl"
 kssh() { kubectl exec -it $1 -- bash; }
@@ -39,6 +40,8 @@ alias pprint="python -m json.tool"
 
 # apt install libxml2-utils
 alias xmllint='xmllint --format'
+
+take() { mkdir -p $@ && cd $_; }
 
 # mac
 if [[ `uname` == 'Darwin' ]]; then

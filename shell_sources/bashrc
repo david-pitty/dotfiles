@@ -1,6 +1,3 @@
-take () {
-  mkdir -p $@ && cd $_;
-}
 export EDITOR=nvim
 export PATH="/home/$USER/bin:$PATH"
 
