@@ -31,6 +31,7 @@ alias grb="git rebase --rebase-merges"
 alias grbc="git rebase --continue"
 alias grbs="git rebase --skip"
 alias grba="git rebase --abort"
+alias grbo="git rebase --onto" # branch commit(exclusive)
 alias grt="git reset"
 alias grh="git reset --hard"
 alias grs="git restore --staged"

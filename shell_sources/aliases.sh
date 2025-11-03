@@ -22,6 +22,7 @@ alias nt="npm test"
 alias service-all="service --status-all"
 alias p="podman"
 alias ggrep="git grep -n"
+alias mongodb='mongosh'
 alias update-fonts="fc-cache -fv"
 count() { l "$1" | tail -n +4 | wc -l; }
 alias clip="xclip -sel clip"
@@ -29,6 +30,7 @@ alias myip="curl https://ipinfo.io/ip"
 
 alias k="kubectl"
 kssh() { kubectl exec -it $1 -- bash; }
+kexec() { kubectl exec -it $1 -- $2; }
 ksh() { kubectl exec -it $1 -- /bin/sh; }
 kcmd() { kubectl exec -it $1 -- $2; } # if multi-word command ($2) wrap in quotes
 
