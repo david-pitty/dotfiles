@@ -16,7 +16,7 @@ vim.cmd('filetype plugin on')
 vim.opt.ignorecase = true
 vim.opt.smartcase = true
 vim.api.nvim_set_keymap('n', '<Leader><Esc>', ':nohlsearch<CR>', { noremap = true })
-vim.opt.grepprg = 'git grep -n'
+vim.opt.grepprg = 'git grep -in'
 
 -- UI
 vim.opt.showcmd = true
