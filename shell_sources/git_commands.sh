@@ -81,4 +81,5 @@ __git_complete gco _git_checkout
 __git_complete gb  _git_checkout
 __git_complete gcb _git_checkout
 __git_complete gbd _git_checkout
+__git_complete gd _git_checkout
 __git_complete grb _git_rebase
