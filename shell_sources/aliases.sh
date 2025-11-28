@@ -28,8 +28,10 @@ count() { l "$1" | tail -n +4 | wc -l; }
 alias clip="xclip -sel clip"
 alias myip="curl https://ipinfo.io/ip"
 
+# kubectl
 alias k="kubectl"
 alias kcontext="kubectl config current-context"
+kdefault() { kubectl config set-context --current --namespace $1; }
 kssh() { kubectl exec -it $1 -- bash; }
 kexec() { kubectl exec -it $1 -- $2; }
 ksh() { kubectl exec -it $1 -- /bin/sh; }
