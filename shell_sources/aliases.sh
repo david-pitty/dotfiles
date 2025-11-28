@@ -29,6 +29,7 @@ alias clip="xclip -sel clip"
 alias myip="curl https://ipinfo.io/ip"
 
 alias k="kubectl"
+alias kcontext="kubectl config current-context"
 kssh() { kubectl exec -it $1 -- bash; }
 kexec() { kubectl exec -it $1 -- $2; }
 ksh() { kubectl exec -it $1 -- /bin/sh; }
