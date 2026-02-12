@@ -11,7 +11,6 @@ alias ggx="git stash drop"
 alias ggs="git stash list"
 alias ggd="git stash show -p stash@{0}"
 alias gm="git merge"
-alias gmm="git merge origin/$(git rev-parse --abbrev-ref HEAD)"
 alias gmff="git merge --no-ff"
 alias gma="git merge --abort"
 alias gb="git branch"
@@ -41,6 +40,10 @@ alias gt="git tag"
 alias gpt="git push --tags"
 alias gbl="git blame"
 alias gmv="git mv"
+
+function gmm {
+    git merge origin/$(git rev-parse --abbrev-ref HEAD)
+}
 
 function ggp {
     git push origin $(git rev-parse --abbrev-ref HEAD)
