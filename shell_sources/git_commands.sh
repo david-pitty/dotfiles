@@ -88,3 +88,6 @@ __git_complete gcb _git_checkout
 __git_complete gbd _git_checkout
 __git_complete gd _git_checkout
 __git_complete grb _git_rebase
+__git_complete grbo _git_rebase
+__git_complete gm _git_merge
+__git_complete gmff _git_merge
