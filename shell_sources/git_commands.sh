@@ -40,6 +40,7 @@ alias gt="git tag"
 alias gpt="git push --tags"
 alias gbl="git blame"
 alias gmv="git mv"
+alias gwhich="git remote get-url origin"
 
 function gmm {
     git merge origin/$(git rev-parse --abbrev-ref HEAD)
