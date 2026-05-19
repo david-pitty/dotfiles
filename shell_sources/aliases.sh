@@ -27,6 +27,8 @@ alias update-fonts="fc-cache -fv"
 count() { l "$1" | tail -n +4 | wc -l; }
 alias clip="xclip -sel clip"
 alias myip="curl https://ipinfo.io/ip"
+check_port() { sudo lsof -i :$1; }
+
 
 # kubectl
 alias k="kubectl"
