@@ -40,6 +40,8 @@ kssh() { kubectl exec -it $1 -- bash; }
 kexec() { kubectl exec -it $1 -- $2; }
 ksh() { kubectl exec -it $1 -- /bin/sh; }
 kcmd() { kubectl exec -it $1 -- $2; } # if multi-word command ($2) wrap in quotes
+kredeploy() { kubectl rollout restart "deployment/$1"; }
+
 
 # python
 alias py=pyenv
