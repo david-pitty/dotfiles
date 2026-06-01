@@ -33,6 +33,7 @@ check_port() { sudo lsof -i :$1; }
 # kubectl
 alias k="kubectl"
 alias kcontext="kubectl config current-context"
+alias kwhich='kubectl config current-context'
 alias klogs="kubectl logs --tail 1 -f $1"
 kdefault() { kubectl config set-context --current --namespace $1; }
 kdefaults() { grep -r namespace ~/.kube/*.yaml; }
