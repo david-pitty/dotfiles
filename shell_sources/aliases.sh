@@ -21,6 +21,7 @@ alias ns="npm start"
 alias nt="npm test"
 alias service-all="service --status-all"
 alias p="podman"
+pstart-image() { podman run -it $1 $2; }
 alias ggrep="git grep -n"
 alias mongodb='mongosh'
 alias update-fonts="fc-cache -fv"

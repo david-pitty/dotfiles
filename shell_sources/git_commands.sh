@@ -26,6 +26,7 @@ alias gcx!="git commit --no-verify --amend --no-edit"
 alias gp="git push"
 alias gl="git pull"
 alias glol="git log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit"
+function gsearch { git log -p -S $1 -- $2; } # searches for pattern and includes the commit diff
 alias gh="glol | head"
 alias gco="git checkout"
 alias gcb="git checkout -b"
