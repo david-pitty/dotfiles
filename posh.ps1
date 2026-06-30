@@ -115,6 +115,7 @@ function gdf { git diff -W $args } # full context
 function gd?($1){ git diff $1~ $1 $args }
 function gdd { git --no-pager diff --name-only $args }
 function gdd?($1) { git --no-pager diff --name-only $1~ $1 $args }
+function gwhich () { git remote get-url origin }
 
 # Python
 function act { venv/Scripts/Activate.ps1 }
