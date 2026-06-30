@@ -28,7 +28,8 @@ count() { l "$1" | tail -n +4 | wc -l; }
 alias clip="xclip -sel clip"
 alias myip="curl https://ipinfo.io/ip"
 check_port() { sudo lsof -i :$1; }
-expand_alias() { alias $1 | sed "s/.*'\(.*\)'/\1/g"; }
+expand_alias() { echo "${BASH_ALIASES[$1]}"; }
+watcher() { watch $(expand_alias $1); }
 
 
 # kubectl
