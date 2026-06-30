@@ -22,13 +22,13 @@ alias nt="npm test"
 alias service-all="service --status-all"
 alias p="podman"
 pstart-image() { podman run -it $1 $2; }
-alias ggrep="git grep -n"
 alias mongodb='mongosh'
 alias update-fonts="fc-cache -fv"
 count() { l "$1" | tail -n +4 | wc -l; }
 alias clip="xclip -sel clip"
 alias myip="curl https://ipinfo.io/ip"
 check_port() { sudo lsof -i :$1; }
+expand_alias() { alias $1 | sed "s/.*'\(.*\)'/\1/g"; }
 
 
 # kubectl
