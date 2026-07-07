@@ -75,6 +75,7 @@ vim.api.nvim_set_keymap('n', '<Leader>co', ':copen<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>cc', ':cclose<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>cn', ':cnext<CR>', { noremap = true })
 vim.api.nvim_set_keymap('n', '<Leader>cp', ':cprevious<CR>', { noremap = true })
+vim.cmd.packadd('cfilter') -- see notes.md
 
 -- Tag list
 -- `Ctrl + ]` navigate to tag

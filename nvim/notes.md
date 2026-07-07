@@ -14,6 +14,7 @@
 `vim.opt.grepprg = 'git grep -n'`
 - Editor is currently configured to use git grep
 - Use `:grep! pattern`. Exclamation mark avoids jumping to first match
+- Use `:grep! -v pattern`. -v for inverse pattern search
 - Results are available in quickfix window
 
 ## Case sensitive search
@@ -27,6 +28,10 @@ After a project search `grep! pattern`
 Open the quickfix window `:copen`
 Apply the replace
 `:cdo s/pattern/replacement/g`
+
+## Filter content in quickfix
+Match pattern `:Cfilter /pattern/`
+Use `!` to inverse search `:Cfilter! /pattern/`
 
 
 # G commands
