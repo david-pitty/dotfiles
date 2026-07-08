@@ -37,8 +37,8 @@ Use `!` to inverse search `:Cfilter! /pattern/`
 # G commands
 ## Sequence of numbers
 - set a bunch of 0s in a column
-- block select them
-- press g, then Ctrl+A
+- block select them (shft+v or ctrl+v)
+- press g, then Ctrl+A (remember in tmux it would be Ctrl+A followed by A again)
 - creates a sequence of numbers
 
 
