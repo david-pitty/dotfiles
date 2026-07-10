@@ -92,6 +92,8 @@ vim.api.nvim_set_keymap('n', '<Leader>R', 'yiw:grep! "<C-r>0\\($\\\\|[^a-z]\\\\)
 vim.api.nvim_set_keymap('t', '<C-\\>', '<C-\\><C-n>', { noremap = true })
 if vim.fn.has('win32') == 1 then
   vim.opt.shell = 'pwsh'
+else
+  vim.env.BASH_ENV = vim.fn.expand("~/projects/dotfiles/shell_sources/aliases.sh")
 end
 
 -- Surround function

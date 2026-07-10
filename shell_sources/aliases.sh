@@ -1,3 +1,5 @@
+shopt -s expand_aliases
+
 alias rm="rm -r"
 alias grep="grep  -in --color=auto"
 alias mkdir="mkdir -p"
@@ -30,6 +32,7 @@ alias myip="curl https://ipinfo.io/ip"
 check_port() { sudo lsof -i :$1; }
 expand_alias() { echo "${BASH_ALIASES[$1]}"; }
 watcher() { watch $(expand_alias $1); }
+alias table="column --table --output-separator \ "
 
 
 # kubectl
