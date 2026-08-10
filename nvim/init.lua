@@ -164,6 +164,9 @@ function _G.Refresh()
 end
 vim.api.nvim_create_user_command('Refresh', _G.Refresh, {})
 
+-- Diff Tool
+vim.cmd.packadd('nvim.difftool') -- see notes
+
 
 require('packer_startup')
 require('plugins')

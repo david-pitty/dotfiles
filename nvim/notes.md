@@ -79,5 +79,13 @@ Paste from register in normal mode: `"<register>p`
 Paste from register in insert mode: `Ctrl-R + <register>`
 
 
+# Diff Tool 
+## Compare Folders
+:DiffTool path/to/dir1/ path/to/dir2/
+
+## Compare Files (from terminal)
+nvim -d path/to/file1 path/to/file2
+
+
 # TODO:
 Look into fzf and integration https://www.youtube.com/watch?v=MvLQor1Ck3M
